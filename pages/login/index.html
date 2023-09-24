@@ -4,6 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
     <title>Emocionômetro | HG</title>
   </head>
   <body>
@@ -12,16 +28,17 @@
         src="../../assets/img/BG.svg"
         alt="Imagem principal: 'Agora você pode medir suas emoções e desenvolver sua inteligência emocional
       '"
+        class="baner"
       />
 
-      <div>
+      <div class="containerFormulario">
         <div class="containerLogo">
           <img
             src="../../assets/img/image 2.svg"
             alt="Logo simplificado: 'Coração'"
           />
 
-          <div>
+          <div class="containerLogoTexto">
             <img
               src="../../assets/img/image 3.svg"
               alt="Imagem: 'Emocionômetro'"
@@ -30,18 +47,26 @@
           </div>
         </div>
 
-        <form action="">
+        <form action="" class="formulario">
           <h1>Faça seu login</h1>
 
-          <label for="">E-mail</label>
-          <input type="email" placeholder="Insira seu e-mail" />
+          <label for="" class="labelText">E-mail</label>
+          <input
+            type="email"
+            placeholder="Insira seu e-mail"
+            class="inputText"
+          />
 
-          <label for="">Senha</label>
-          <input type="password" placeholder="Insira sua senha" />
+          <label for="" class="labelText">Senha</label>
+          <input
+            type="password"
+            placeholder="Insira sua senha"
+            class="inputText"
+          />
 
-          <div>
+          <div class="checkbox">
             <input type="checkbox" />
-            <label for="checkbox">Lembre-me</label>
+            <label for="checkbox">Lembrar-me</label>
 
             <a href="">Esqueceu sua senha?</a>
           </div>
@@ -50,7 +75,7 @@
 
           <p>Ou então</p>
 
-          <button>Cadastrar-se</button>
+          <button class="cadastrarSe">Cadastrar-se</button>
         </form>
       </div>
     </main>

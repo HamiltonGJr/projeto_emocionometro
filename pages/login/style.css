@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0; 
+
+  font-family: 'Nunito', sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+
+  background-color: #F5F4F9;
+}
+
+main .baner {
+  width: 60%;
+  height: 100vh; 
+}
+
+main .containerFormulario {
+  width: 40%;
+
+  border-radius: 24px 0 0 24px;
+  box-shadow: 0px 7px 30px 0px rgba(187, 192, 205, 0.40);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+
+  background-color: #FFF;
+}
+
+.containerLogo {
+  width: 315px;
+  height: 62px;
+
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form h1 {
+  font-size: 48px;
+}
+
+form .inputText {
+  width: 390px;
+  padding: 15px 10px;
+
+  border-radius: 16px;
+  border: 1px solid #C5C5C5;
+}
+
+form .labelText {
+  margin-top: 25px;
+
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+
+  color: #C5C5C5;
+}
+
+form .checkbox {
+  margin: 33px 0 39px 0;
+
+  font-size: 18px;
+
+  display: flex;
+  gap: 5px;
+}
+
+form .checkbox label {
+  font-size:  16px;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+}
+
+form .checkbox a {
+  margin: 0 0 0 140px;
+
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+
+  color: #7B90C1;
+}
+
+form button {
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
+
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+
+  border: none;
+  border-radius: 8px;
+
+  color: #FFF;
+  background-color: #E0E0E0;
+}
+
+form p {
+  font-size: 18px;
+  
+  color: #616161;
+}
+
+form .cadastrarSe {
+  background-color: #00C249;
+}
