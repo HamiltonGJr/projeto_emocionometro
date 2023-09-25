@@ -27,7 +27,7 @@ main .containerFormulario {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 22px;
+  gap: 2%;
 
   background-color: #FFF;
 }
@@ -52,11 +52,17 @@ form h1 {
 }
 
 form .inputText {
-  width: 390px;
+  width: 80%;
   padding: 15px 10px;
 
   border-radius: 16px;
   border: 1px solid #C5C5C5;
+}
+
+form .olho_fechado{
+  position: relative;
+  bottom: 7.5%;
+  left: 34%;
 }
 
 form .labelText {
@@ -65,11 +71,19 @@ form .labelText {
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
 
+  border-left: 5px solid #FFF;
+  border-right: 5px solid #FFF;
+
+  position: relative;
+  top: 13px;
+  right: 130px;
+
   color: #C5C5C5;
+  background-color: #FFF;
 }
 
 form .checkbox {
-  margin: 33px 0 39px 0;
+  margin: 1% 0 2% 0;
 
   font-size: 18px;
 
@@ -93,7 +107,7 @@ form .checkbox a {
 }
 
 form button {
-  width: 400px;
+  width: 80%;
   padding: 10px;
   margin: 10px;
 
