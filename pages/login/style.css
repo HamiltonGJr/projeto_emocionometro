@@ -110,7 +110,7 @@ form .checkbox a {
   color: #7B90C1;
 }
 
-form button {
+form .button {
   width: 85%;
   padding: 10px;
   margin: 10px;
@@ -118,6 +118,8 @@ form button {
   font-size: 18px;
   font-weight: 700;
   font-family: 'Nunito', sans-serif;
+  text-align: center;
+  text-decoration: none;
 
   border: none;
   border-radius: 8px;
@@ -126,6 +128,13 @@ form button {
 
   color: #FFF;
   background-color: #E0E0E0;
+
+  transition: 0.3s;
+}
+
+form .button:hover {
+  transition: 0.3s;
+  background-color: #00C249;
 }
 
 form .cotainerP {
