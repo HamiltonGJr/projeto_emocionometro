@@ -61,13 +61,11 @@ form .inputText {
 
 form .olho_fechado{
   position: relative;
-  bottom: 7.5%;
-  left: 34%;
+  bottom: 8.5%;
+  left: 35%;
 }
 
 form .labelText {
-  margin-top: 25px;
-
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
 
@@ -76,7 +74,7 @@ form .labelText {
 
   position: relative;
   top: 13px;
-  right: 130px;
+  right: 115px;
 
   color: #C5C5C5;
   background-color: #FFF;
@@ -91,14 +89,20 @@ form .checkbox {
   gap: 5px;
 }
 
+form .checkbox input {
+  margin: 0 0 0 25px;
+}
+
 form .checkbox label {
+  margin: 0 25px 0 0;
+
   font-size:  16px;
   font-weight: 700;
   font-family: 'Nunito', sans-serif;
 }
 
 form .checkbox a {
-  margin: 0 0 0 140px;
+  margin: 0 25px 0 25px;
 
   font-size: 16px;
   font-family: 'Nunito', sans-serif;
@@ -107,7 +111,7 @@ form .checkbox a {
 }
 
 form button {
-  width: 80%;
+  width: 85%;
   padding: 10px;
   margin: 10px;
 
@@ -118,14 +122,29 @@ form button {
   border: none;
   border-radius: 8px;
 
+  cursor: pointer;
+
   color: #FFF;
   background-color: #E0E0E0;
+}
+
+form .cotainerP {
+  display: flex;
+  align-items: center;
 }
 
 form p {
   font-size: 18px;
   
   color: #616161;
+}
+
+form .line {
+  width: 20px;
+  height: 1px;
+  margin: 0 10px;
+
+  background-color: #616161;
 }
 
 form .cadastrarSe {
