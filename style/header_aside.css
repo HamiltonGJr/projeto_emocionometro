@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 9vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerLogo {
+  margin: 0 0 0 24px;
+
+  display: flex;
+  gap: 5px;
+}
+
+.containerLogoTexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.imgLogoCoracao {
+  width: 45px;
+}
+
+.imgLogoTexto01 {
+  width: 145px;
+}
+
+.imgLogoTexto02 {
+  width: 125px;
+}
+
+.containerUsuario {
+  display: flex;
+  align-items: center;
+}
+
+.containerRedondoUser {
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+  border: none;
+
+  background-color: #f9e423;
+}
+
+.containerRedondoUser img {
+  width: 28px;
+
+  position: relative;
+  top: 7px;
+  left: 9px;
+}
+
+.containerUsuario p {
+  margin: 0 31px 0 16px;
+
+  font-size: 20px;
+  font-weight: 600px;
+}
+
+.containerBorda {
+  display: flex;
+}
+
+.borda {
+  width: 20%;
+  height: 3px;
+}
+
+.borda01 {
+  background-color: #aa6f34;
+}
+
+.borda02 {
+  background-color: #d2772e;
+}
+
+.borda03 {
+  background-color: #f48221;
+}
+
+.borda04 {
+  background-color: #faa61a;
+}
+
+.borda05 {
+  background-color: #f9e423;
+}
+/* MENU */
+
+aside {
+  width: 18%;
+  height: 90.5vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  background-color: #f9e423;
+}
+
+aside .containerButton {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+aside .containerButton a {
+  padding: 10px 0 10px 12px;
+
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 5%;
+
+  cursor: pointer;
+
+  color: #aa6f34;
+}
+
+aside .containerButton a:hover {
+  border-left: 4px solid #f48221;
+
+  background-color: #faa61a;
+}
+
+aside .containerButton button {
+  padding: 10px 0 10px 12px;
+
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 5%;
+
+  border: none;
+
+  cursor: pointer;
+
+  color: #aa6f34;
+  background-color: #f9e423;
+}
+
+aside .containerButton button:hover {
+  border-left: 4px solid #f48221;
+
+  background-color: #faa61a;
+}
+
+aside .containerButton #containerAreaUsers {
+  display: none;
+}
+
+aside .containerButton #containerAreaUsers .user:hover {
+  background-color: #f48221;
+}
+
+aside .containerButton a img {
+  width: 25px;
+}
+
+.divConteudoPrincipalMaisAside {
+  display: flex;
+}
+/* ASIDE */

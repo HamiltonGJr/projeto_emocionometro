@@ -1,27 +1,27 @@
 * {
   margin: 0;
-  padding: 0; 
+  padding: 0;
 
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 main {
   display: flex;
   justify-content: center;
 
-  background-color: #F5F4F9;
+  background-color: #f5f4f9;
 }
 
 main .baner {
   width: 60%;
-  height: 100vh; 
+  height: 100vh;
 }
 
 main .containerFormulario {
   width: 40%;
 
   border-radius: 24px 0 0 24px;
-  box-shadow: 0px 7px 30px 0px rgba(187, 192, 205, 0.40);
+  box-shadow: 0px 7px 30px 0px rgba(187, 192, 205, 0.4);
 
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@ main .containerFormulario {
   align-items: center;
   gap: 2%;
 
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .containerLogo {
@@ -56,10 +56,10 @@ form .inputText {
   padding: 15px 10px;
 
   border-radius: 16px;
-  border: 1px solid #C5C5C5;
+  border: 1px solid #c5c5c5;
 }
 
-form .olho_fechado{
+form .olho_fechado {
   position: relative;
   bottom: 8.5%;
   left: 35%;
@@ -67,17 +67,17 @@ form .olho_fechado{
 
 form .labelText {
   font-size: 14px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 
-  border-left: 5px solid #FFF;
-  border-right: 5px solid #FFF;
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
 
   position: relative;
   top: 13px;
   right: 115px;
 
-  color: #C5C5C5;
-  background-color: #FFF;
+  color: #c5c5c5;
+  background-color: #fff;
 }
 
 form .checkbox {
@@ -96,18 +96,18 @@ form .checkbox input {
 form .checkbox label {
   margin: 0 25px 0 0;
 
-  font-size:  16px;
+  font-size: 16px;
   font-weight: 700;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 form .checkbox a {
   margin: 0 25px 0 25px;
 
   font-size: 16px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 
-  color: #7B90C1;
+  color: #7b90c1;
 }
 
 form .button {
@@ -117,7 +117,7 @@ form .button {
 
   font-size: 18px;
   font-weight: 700;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   text-align: center;
   text-decoration: none;
 
@@ -126,15 +126,15 @@ form .button {
 
   cursor: pointer;
 
-  color: #FFF;
-  background-color: #E0E0E0;
+  color: #fff;
+  background-color: #e0e0e0;
 
   transition: 0.3s;
 }
 
 form .button:hover {
   transition: 0.3s;
-  background-color: #00C249;
+  background-color: #00c249;
 }
 
 form .cotainerP {
@@ -144,7 +144,7 @@ form .cotainerP {
 
 form p {
   font-size: 16px;
-  
+
   color: #616161;
 }
 
@@ -157,5 +157,5 @@ form .line {
 }
 
 form .cadastrarSe {
-  background-color: #00C249;
+  background-color: #00c249;
 }
