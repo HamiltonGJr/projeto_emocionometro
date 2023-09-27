@@ -172,6 +172,10 @@ aside .containerButton a img {
   width: 25px;
 }
 
+aside .containerButton button img {
+  width: 25px;
+}
+
 .divConteudoPrincipalMaisAside {
   display: flex;
 }
