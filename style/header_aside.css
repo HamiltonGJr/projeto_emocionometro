@@ -185,4 +185,22 @@ aside .containerButton button img {
 .divConteudoPrincipalMaisAside {
   display: flex;
 }
+
+.imgSeta {
+  transition: 0.3s;
+}
+
+/* JS */
+
+.imgSetaBaixo {
+  transform: rotate(88deg);
+  transition: 0.3s;
+}
+
+.containerButtonSelecionado {
+  border-left: 4px solid #f48221 !important;
+
+  color: #FFF;
+  background-color: #faa61a !important;
+}
 /* ASIDE */
