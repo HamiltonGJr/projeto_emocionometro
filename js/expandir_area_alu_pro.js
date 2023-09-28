@@ -16,7 +16,6 @@ areaUsers.addEventListener('click', function () {
     bottonAreaUsers.style.background = '#faa61a'
     bottonAreaUsers.style.borderLeft = '4px solid #f48221'
 
-
     imgSeta.style.transform = 'rotate(88deg)'
     imgSeta.style.transition = '0.2s'
   } else {
@@ -25,7 +24,6 @@ areaUsers.addEventListener('click', function () {
     bottonAreaUsers.style.color = '#aa6f34'
     bottonAreaUsers.style.background = '#f9e423'
     bottonAreaUsers.style.borderLeft = 'none'
-
 
     imgSeta.style.transform = 'rotate(0deg)'
     imgSeta.style.transition = '0.4s'
