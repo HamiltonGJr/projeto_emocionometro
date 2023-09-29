@@ -132,11 +132,6 @@ form .button {
   transition: 0.3s;
 }
 
-form .button:hover {
-  transition: 0.3s;
-  background-color: #00c249;
-}
-
 form .cotainerP {
   display: flex;
   align-items: center;
@@ -149,7 +144,7 @@ form p {
 }
 
 form .line {
-  width: 20px;
+  width: 33px;
   height: 1px;
   margin: 0 10px;
 
@@ -158,4 +153,11 @@ form .line {
 
 form .cadastrarSe {
   background-color: #00c249;
+}
+
+/* JS */
+
+.buttonSelecionado {
+  transition: 0.3s;
+  background-color: #00c249 !important;
 }

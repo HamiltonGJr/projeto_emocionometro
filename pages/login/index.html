@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="../../js/login.js" defer></script>
+    <script src="../../js/login_liberação_entrar.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -80,7 +80,7 @@
             <a href="">Esqueceu sua senha?</a>
           </div>
 
-          <a href="../home/index.html" class="button">Entrar</a>
+          <button onclick="fazerLogin()" id="botaoEntrar" class="button" type="button" disabled>Entrar</button>
 
           <div class="cotainerP">
             <div class="line"></div>
@@ -88,7 +88,7 @@
             <div class="line"></div>
           </div>
 
-          <a class="button cadastrarSe">Cadastrar-se</a>
+          <button onclick="fazerLogin()" class="button cadastrarSe">Cadastrar-se</button>
         </form>
       </div>
     </main>
