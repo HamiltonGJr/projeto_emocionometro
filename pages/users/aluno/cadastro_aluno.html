@@ -21,9 +21,9 @@
     />
 
     <link rel="stylesheet" href="../../../style/header_aside.css" />
-    <link rel="stylesheet" href="../../../style/users_aluno.css" />
+    <link rel="stylesheet" href="../../../style/user_aluno_cadastro.css" />
 
-    <title>Aluno | HG</title>
+    <title>Cadastro Aluno | HG</title>
   </head>
   <body>
     <header>
@@ -137,43 +137,33 @@
 
       <main>
         <div class="informacaoUser">
-          <h1>Usuário</h1>
+          <a href="../aluno/index.html">
+            <img src="../../../assets/img/Ellipse 112.svg" alt="" class="imgVoltar">
+          </a>
+          <h1>Novo Usuário</h1>
           <img src="../../../assets/img/right-gray.svg" alt="" />
           <h2>Aluno</h2>
         </div>
 
         <form action="">
-          <div class="containerinputPesquisa">
-            <input type="text" placeholder="Pesquise uma palavra-chave" />
-            <img src="../../../assets/img/search.svg" alt="" />
+          <h2>Dados do usuário</h2>
+
+          <div class="containerForm">
+            <div>
+              <label for="">Nome</label>
+              <br>
+              <input type="text" placeholder="Digite seu nome...">
+            </div>
+
+            <div>
+              <label for="">Turma</label>
+              <br>
+              <input type="text" placeholder="Digite sua turma...">
+            </div>
           </div>
 
-          <a href="../aluno/cadastro_aluno.html" class="botaoNovoUsuario">
-            <img src="../../../assets/img/Plus 24px.svg" alt="" /> 
-            <p>Novo Usuário</p>
-          </a>
+          <button>SALVAR</button>
         </form>
-
-        <div class="containerTabela">
-          <table>
-            <thead>
-              <tr>
-                <th class="nome">Nome</th>
-                <th>Turma</th>
-                <th>Ativo</th>
-                <th>Ações</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>${nome.value}</td>
-                <td>${turma.value}</td>
-                <td>button</td>
-                <td>delete / edite</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
       </main>
     </div>
   </body>
