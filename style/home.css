@@ -6,7 +6,7 @@ main {
   align-items: center;
   flex-direction: column;
 
-  background-color: #F5F4F9;
+  background-color: #f5f4f9;
 }
 
 .containerTexto {
@@ -20,13 +20,12 @@ main {
   font-size: 25px;
   font-weight: 700;
 
-  color: #AA6F34;
+  color: #aa6f34;
 }
 
 .containerTexto h2 {
   font-size: 35px;
   font-weight: 700;
-
 
   color: #757575;
 }
@@ -48,10 +47,10 @@ main {
 
   border-radius: 8px;
 
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .containerFaleConosco img {
   width: 75px;
-  cursor: pointer
+  cursor: pointer;
 }

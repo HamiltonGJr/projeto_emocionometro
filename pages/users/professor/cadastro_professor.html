@@ -21,9 +21,9 @@
     />
 
     <link rel="stylesheet" href="../../../style/header_aside.css" />
-    <link rel="stylesheet" href="../../../style/user_aluno_cadastro.css" />
+    <link rel="stylesheet" href="../../../style/user_professor_cadastro.css" />
 
-    <title>Cadastro Aluno | HG</title>
+    <title>Cadastro Professor | HG</title>
   </head>
   <body>
     <header>
@@ -137,7 +137,7 @@
 
       <main>
         <div class="informacaoUser">
-          <a href="../aluno/index.html">
+          <a href="../professor/index.html">
             <img
               src="../../../assets/img/Ellipse 112.svg"
               alt=""
@@ -146,7 +146,7 @@
           </a>
           <h1>Novo Usuário</h1>
           <img src="../../../assets/img/right-gray.svg" alt="" />
-          <h2>Aluno</h2>
+          <h2>Professor</h2>
         </div>
 
         <form action="">
@@ -164,12 +164,22 @@
             </div>
 
             <div>
-              <label for="">Turma</label>
+              <label for="">Perfil</label>
+              <br />
+              <select name="" id="">
+                <option value="none" disabled selected>Qual o seu perfil...</option>
+                <option value="prof">Professor</option>
+                <option value="dir">Diretor</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="">Disciplina</label>
               <br />
               <input
                 type="text"
                 class="inputText"
-                placeholder="Digite sua turma..."
+                placeholder="Digite sua disciplina..."
               />
             </div>
 

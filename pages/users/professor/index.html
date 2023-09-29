@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="../../js/expandir_area_alu_pro.js" defer></script>
+    <script src="../../../js/expandir_area_alu_pro.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,28 +20,28 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="../../style/header_aside.css" />
-    <link rel="stylesheet" href="../../style/home.css" />
+    <link rel="stylesheet" href="../../../style/header_aside.css" />
+    <link rel="stylesheet" href="../../../style/users_aluno.css" />
 
-    <title>Home | HG</title>
+    <title>Professor | HG</title>
   </head>
   <body>
     <header>
       <div class="containerLogo">
         <img
-          src="../../assets/img/image 2.svg"
+          src="../../../assets/img/image 2.svg"
           alt="Logo simplificado: 'Coração'"
           class="imgLogoCoracao"
         />
 
         <div class="containerLogoTexto">
           <img
-            src="../../assets/img/image 3.svg"
+            src="../../../assets/img/image 3.svg"
             alt="Imagem: 'Emocionômetro'"
             class="imgLogoTexto01"
           />
           <img
-            src="../../assets/img/image 4.svg"
+            src="../../../assets/img/image 4.svg"
             alt="Imagem: 'De grupo'"
             class="imgLogoTexto02"
           />
@@ -51,7 +51,7 @@
       <div class="containerUsuario">
         <div class="containerRedondoUser">
           <img
-            src="../../assets/img/User.svg"
+            src="../../../assets/img/User.svg"
             alt="imagem de User - Ilustrativa"
             class="imgUser"
           />
@@ -71,39 +71,42 @@
     <div class="divConteudoPrincipalMaisAside">
       <aside>
         <div class="containerButton">
-          <a href="../home/index.html">
-            <img src="../../assets/img/home.svg" alt="Casa (Home) - Inicio" />
+          <a href="../../home/index.html">
+            <img
+              src="../../../assets/img/home.svg"
+              alt="Casa (Home) - Inicio"
+            />
 
             <p>Inicio</p>
           </a>
 
           <button onclick="buttonSelecionado()" id="bottonAreaUsers">
             <img
-              src="../../assets/img/add-user.svg"
+              src="../../../assets/img/add-user.svg"
               alt="Users - Usuario: Professor ou Aluno"
             />
 
             <p>Usúarios</p>
 
             <img
-              src="../../assets/img/right.svg"
+              src="../../../assets/img/right.svg"
               alt="Seta - Para saber mais dos usúarios"
               class="imgSeta"
               id="imgSeta"
             />
           </button>
           <div id="containerAreaUsers">
-            <a class="user" href="../users/aluno/index.html">
+            <a class="user" href="../../users/aluno/index.html">
               <p>Aluno</p>
             </a>
-            <a class="user" href="../users/professor/index.html">
+            <a class="user" href="../professor/index.html">
               <p>Professor</p>
             </a>
           </div>
 
-          <a href="../emocionometro/index.html">
+          <a href="../../emocionometro/index.html">
             <img
-              src="../../assets/img/heart.svg"
+              src="../../../assets/img/heart.svg"
               alt="Coração - Emocionômetro"
             />
 
@@ -113,13 +116,19 @@
 
         <div class="containerButton">
           <a>
-            <img src="../../assets/img/user.svg" alt="Coração - Meu perfil" />
+            <img
+              src="../../../assets/img/user.svg"
+              alt="Coração - Meu perfil"
+            />
 
             <p>Meu perfil</p>
           </a>
 
-          <a href="../login/index.html">
-            <img src="../../assets/img/logout.svg" alt="Coração - Meu perfil" />
+          <a href="../../login/index.html">
+            <img
+              src="../../../assets/img/logout.svg"
+              alt="Coração - Meu perfil"
+            />
 
             <p>Sair</p>
           </a>
@@ -127,15 +136,48 @@
       </aside>
 
       <main>
-        <div class="containerTexto">
-          <h1>Olá! Bem vindo ao seu</h1>
-          <h2>EMOCIONÔMENTRO DE GRUPO</h2>
+        <div class="informacaoUser">
+          <h1>Usuário</h1>
+          <img src="../../../assets/img/right-gray.svg" alt="" />
+          <h2>Professor</h2>
         </div>
 
-        <div class="containerFaleConosco">
-          <h3>Fale Conosco</h3>
+        <form action="">
+          <div class="containerinputPesquisa">
+            <input type="text" placeholder="Pesquise uma palavra-chave" />
+            <img src="../../../assets/img/search.svg" alt="" />
+          </div>
 
-          <img src="../../assets/img/Ellipse 151.svg" alt="" />
+          <a
+            href="../professor/cadastro_professor.html"
+            class="botaoNovoUsuario"
+          >
+            <img src="../../../assets/img/Plus 24px.svg" alt="" />
+            <p>Novo Usuário</p>
+          </a>
+        </form>
+
+        <div class="containerTabela">
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Disciplina</th>
+                <th>Perfil</th>
+                <th>Ativo</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>${nome.value}</td>
+                <td>${turma.value}</td>
+                <td>${perfil.value}</td>
+                <td>button</td>
+                <td>delete / edite</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </main>
     </div>

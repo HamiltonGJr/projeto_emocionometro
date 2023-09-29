@@ -136,7 +136,7 @@ aside .containerButton a {
 aside .containerButton a:hover {
   border-left: 4px solid #f48221;
 
-  color: #FFF;
+  color: #fff;
   background-color: #faa61a;
 }
 
@@ -162,7 +162,7 @@ aside .containerButton button {
 aside .containerButton button:hover {
   border-left: 4px solid #f48221;
 
-  color: #FFF;
+  color: #fff;
   background-color: #faa61a;
 }
 
@@ -200,7 +200,7 @@ aside .containerButton button img {
 .containerButtonSelecionado {
   border-left: 4px solid #f48221 !important;
 
-  color: #FFF;
+  color: #fff;
   background-color: #faa61a !important;
 }
 /* ASIDE */
