@@ -1,0 +1,116 @@
+main {
+  width: 100%;
+  background-color: #F5F4F9;
+}
+
+.informacaoUser {
+  margin: 20px 0 0 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.informacaoUser h1 {
+  font-size: 22px;
+}
+
+.informacaoUser img {
+  width: 20px;
+}
+
+.informacaoUser h2 {
+  font-size: 25px;
+}
+
+form {
+  margin: 15px 25px 0 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerinputPesquisa {
+  display: flex;
+  align-items: center;
+}
+
+.containerinputPesquisa input {
+  width: 300px;
+  padding: 12px;
+
+  border: 1.5px solid #E0E0E0;
+  border-radius: 08px;
+}
+
+.containerinputPesquisa img {
+  position: relative;
+  right: 35px;
+}
+
+.botaoNovoUsuario {
+  width: 175px;
+  padding: 11px 0;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  border: none;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  cursor: pointer;
+
+  color: #FFF;
+  background-color: #00C247;
+}
+
+.botaoNovoUsuario img {
+  width: 20px;
+}
+
+.containerTabela {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  width: 97%;
+  margin-top: 10px;
+
+  border-collapse: collapse;
+}
+
+.containerTabela table thead tr th {
+  padding: 15px;
+
+  font-size: 14px;
+  text-align: center;
+}
+
+.containerTabela table tbody tr {
+  border: 8px solid #F5F4F9;
+}
+
+.containerTabela table tbody tr td {
+  padding: 15px 20px;
+
+  text-align: center;
+
+  background-color: #FFF;
+}
+
+.bordaRadiusEsquerda {
+  border-radius: 8px 0 0 8px;
+}
+
+.bordaRadiusDireita {
+  border-radius: 0 8px 8px 0;
+}

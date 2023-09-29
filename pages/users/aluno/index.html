@@ -21,7 +21,7 @@
     />
 
     <link rel="stylesheet" href="../../../style/header_aside.css" />
-    <link rel="stylesheet" href="../../../style/" />
+    <link rel="stylesheet" href="../../../style/users_aluno.css" />
 
     <title>Aluno | HG</title>
   </head>
@@ -72,7 +72,10 @@
       <aside>
         <div class="containerButton">
           <a href="../../home/index.html">
-            <img src="../../../assets/img/home.svg" alt="Casa (Home) - Inicio" />
+            <img
+              src="../../../assets/img/home.svg"
+              alt="Casa (Home) - Inicio"
+            />
 
             <p>Inicio</p>
           </a>
@@ -113,20 +116,65 @@
 
         <div class="containerButton">
           <a>
-            <img src="../../../assets/img/user.svg" alt="Coração - Meu perfil" />
+            <img
+              src="../../../assets/img/user.svg"
+              alt="Coração - Meu perfil"
+            />
 
             <p>Meu perfil</p>
           </a>
 
           <a href="../../login/index.html">
-            <img src="../../../assets/img/logout.svg" alt="Coração - Meu perfil" />
+            <img
+              src="../../../assets/img/logout.svg"
+              alt="Coração - Meu perfil"
+            />
 
             <p>Sair</p>
           </a>
         </div>
       </aside>
 
-      <main></main>
+      <main>
+        <div class="informacaoUser">
+          <h1>Usuário</h1>
+          <img src="../../../assets/img/right-gray.svg" alt="" />
+          <h2>Aluno</h2>
+        </div>
+
+        <form action="">
+          <div class="containerinputPesquisa">
+            <input type="text" placeholder="Pesquise uma palavra-chave" />
+            <img src="../../../assets/img/search.svg" alt="" />
+          </div>
+
+          <a class="botaoNovoUsuario">
+            <img src="../../../assets/img/Plus 24px.svg" alt="" /> 
+            <p>Novo Usuário</p>
+          </a>
+        </form>
+
+        <div class="containerTabela">
+          <table>
+            <thead>
+              <tr>
+                <th class="nome">Nome</th>
+                <th>Turma</th>
+                <th>Ativo</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>${nome.value}</td>
+                <td>${turma.value}</td>
+                <td>button</td>
+                <td>delete / edite</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
     </div>
   </body>
 </html>
