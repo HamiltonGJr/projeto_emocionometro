@@ -1,0 +1,19 @@
+{
+  "aluno": [
+    {
+      "id": 1,
+      "nome": "Hamilton",
+      "turma": "Turma 01",
+      "ativo": true
+    }
+  ],
+  "professor": [
+    {
+      "id": 1,
+      "nome": "João Marcelo",
+      "perfil": "professor",
+      "disciplina": "Matemática",
+      "ativo": false
+    }
+  ]
+}
