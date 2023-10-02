@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script src="../../../js/app_professor.js" defer></script>
     <script src="../../../js/expandir_area_alu_pro.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,7 +26,7 @@
 
     <title>Professor | HG</title>
   </head>
-  <body>
+  <body onload="getProfessor()">
     <header>
       <div class="containerLogo">
         <img
@@ -168,15 +169,7 @@
                 <th>Ações</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>${nome.value}</td>
-                <td>${turma.value}</td>
-                <td>${perfil.value}</td>
-                <td>button</td>
-                <td>delete / edite</td>
-              </tr>
-            </tbody>
+            <tbody id="tbody"></tbody>
           </table>
         </div>
       </main>

@@ -1,26 +1,27 @@
-const getAluno = async () => {
-  const apiURL = await fetch('http://localhost:3000/aluno')
-  const aluno = await apiURL.json()
+const getProfessor = async () => {
+  const apiURL = await fetch('http://localhost:3000/professor')
+  const professor = await apiURL.json()
 
   const tbody = document.getElementById('tbody')
 
-  aluno.forEach((conteudo) => {
+  professor.forEach((conteudo) => {
     const dadoHTML = `
-      <tr>
+    <tr>
         <td>${conteudo.nome}</td>
-        <td>${conteudo.turma}</td>
+        <td>${conteudo.disciplina}</td>
+        <td>${conteudo.perfil}</td>
         <td>${conteudo.ativo}</td>
-        <td class="tdButtonAcoes">
+        <td>          
           <button class="buttonAcoes">
             <img src="../../../assets/img/editar.svg" class="imgAcoes"/>
           </button>
 
           <button class="buttonAcoes">
             <img src="../../../assets/img/remover.svg" class="imgAcoes"/>
-          </button>
-        </td>
+          </button></td>
       </tr>
     `
-  tbody.innerHTML = tbody.innerHTML + dadoHTML
-})
+
+    tbody.innerHTML = tbody.innerHTML + dadoHTML
+  })
 }

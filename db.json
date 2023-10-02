@@ -8,14 +8,14 @@
     },
     {
       "id": 2,
-      "nome": "Hamilton",
-      "turma": "Turma 01",
+      "nome": "Marcio",
+      "turma": "Turma 02",
       "ativo": true
     },
     {
       "id": 3,
-      "nome": "Hamilton",
-      "turma": "Turma 01",
+      "nome": "Veronica",
+      "turma": "Turma 03",
       "ativo": true
     }
   ],
@@ -23,6 +23,20 @@
     {
       "id": 1,
       "nome": "João Marcelo",
+      "perfil": "professor",
+      "disciplina": "Matemática",
+      "ativo": false
+    },
+    {
+      "id": 1,
+      "nome": "Pedro Souza",
+      "perfil": "professor",
+      "disciplina": "Português",
+      "ativo": false
+    },
+    {
+      "id": 1,
+      "nome": "Arthur Astar",
       "perfil": "professor",
       "disciplina": "Matemática",
       "ativo": false

@@ -115,3 +115,20 @@ table {
 .bordaRadiusDireita {
   border-radius: 0 8px 8px 0;
 }
+
+.buttonAcoes {
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  background-color: #FFF;
+}
+
+.imgAcoes {
+  width: 30px;
+  margin-top: 3px;
+}
