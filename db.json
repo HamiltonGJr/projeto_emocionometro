@@ -5,6 +5,18 @@
       "nome": "Hamilton",
       "turma": "Turma 01",
       "ativo": true
+    },
+    {
+      "id": 2,
+      "nome": "Hamilton",
+      "turma": "Turma 01",
+      "ativo": true
+    },
+    {
+      "id": 3,
+      "nome": "Hamilton",
+      "turma": "Turma 01",
+      "ativo": true
     }
   ],
   "professor": [
