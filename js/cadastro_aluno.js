@@ -13,7 +13,6 @@ const cadastrarAluno = async (aluno) => {
   window.location.href = '../aluno/index.html'
 }
 
-
 formulario.addEventListener('submit', (e) => {
   e.preventDefault()
 

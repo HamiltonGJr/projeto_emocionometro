@@ -6,7 +6,7 @@ const getProfessor = async () => {
 
   professor.forEach((conteudo) => {
     const dadoHTML = `
-    <tr>
+      <tr>
         <td>${conteudo.nome}</td>
         <td>${conteudo.disciplina}</td>
         <td>${conteudo.perfil}</td>
@@ -16,12 +16,18 @@ const getProfessor = async () => {
             <img src="../../../assets/img/editar.svg" class="imgAcoes"/>
           </button>
 
-          <button class="buttonAcoes">
+          <button onclick="deletarProfessor(${conteudo.id})" class="buttonAcoes">
             <img src="../../../assets/img/remover.svg" class="imgAcoes"/>
-          </button></td>
+          </button>
+        </td>
       </tr>
     `
 
     tbody.innerHTML = tbody.innerHTML + dadoHTML
   })
+}
+
+const deletarProfessor = async(id) => {
+  await fetch(`http://localhost:3000/professor/${id}`,{method:'DELETE'})
+  getProfessor()
 }

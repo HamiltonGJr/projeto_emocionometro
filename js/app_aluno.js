@@ -15,7 +15,7 @@ const getAluno = async () => {
             <img src="../../../assets/img/editar.svg" class="imgAcoes"/>
           </button>
 
-          <button class="buttonAcoes">
+          <button onclick="deletarAluno(${conteudo.id})" class="buttonAcoes">
             <img src="../../../assets/img/remover.svg" class="imgAcoes"/>
           </button>
         </td>
@@ -23,4 +23,9 @@ const getAluno = async () => {
     `
   tbody.innerHTML = tbody.innerHTML + dadoHTML
 })
+}
+
+const deletarAluno = async(id) => {
+  await fetch(`http://localhost:3000/aluno/${id}`,{method:'DELETE'})
+  getAluno()
 }

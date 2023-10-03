@@ -119,6 +119,7 @@ table {
 .buttonAcoes {
   width: 40px;
   height: 40px;
+  margin: 0 2px;
 
   border: none;
   border-radius: 50%;
