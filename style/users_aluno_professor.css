@@ -97,11 +97,11 @@ table {
 }
 
 .containerTabela table tbody tr {
-  border: 8px solid #F5F4F9;
+  border: 6px solid #F5F4F9;
 }
 
 .containerTabela table tbody tr td {
-  padding: 15px 20px;
+  padding: 6px 20px;
 
   text-align: center;
 

@@ -1,45 +1,57 @@
 {
   "aluno": [
     {
-      "id": 1,
-      "nome": "Hamilton",
-      "turma": "Turma 01",
-      "ativo": true
+      "nome": "Vania",
+      "turma": "Turma - 03",
+      "ativo": "on",
+      "id": 1
     },
     {
-      "id": 2,
-      "nome": "Marcio",
-      "turma": "Turma 02",
-      "ativo": true
+      "nome": "Hamilton Gonçalves ",
+      "turma": "Turma - 01",
+      "ativo": "on",
+      "id": 2
     },
     {
-      "id": 3,
-      "nome": "Veronica",
-      "turma": "Turma 03",
-      "ativo": true
+      "nome": "Artur Astar",
+      "turma": "Turma - 02",
+      "ativo": "on",
+      "id": 3
+    },
+    {
+      "nome": "Hamilton Souza",
+      "turma": "Turma - 05",
+      "ativo": "on",
+      "id": 4
+    },
+    {
+      "nome": "Vinicius Coelho",
+      "turma": "Turma - 01",
+      "ativo": "on",
+      "id": 5
     }
   ],
   "professor": [
     {
-      "id": 1,
-      "nome": "João Marcelo",
-      "perfil": "professor",
-      "disciplina": "Matemática",
-      "ativo": false
+      "nome": "Vinicius Coelho",
+      "perfil": "Professor",
+      "disciplina": "Psicologia",
+      "ativo": "on",
+      "id": 1
     },
     {
-      "id": 1,
-      "nome": "Pedro Souza",
-      "perfil": "professor",
-      "disciplina": "Português",
-      "ativo": false
+      "nome": "Hamilton Gonçalves ",
+      "perfil": "Professor",
+      "disciplina": "Psicologia",
+      "ativo": "on",
+      "id": 2
     },
     {
-      "id": 1,
-      "nome": "Arthur Astar",
-      "perfil": "professor",
-      "disciplina": "Matemática",
-      "ativo": false
+      "nome": "juliana coelho valter",
+      "perfil": "Diretor",
+      "disciplina": "Psicologia",
+      "ativo": "on",
+      "id": 3
     }
   ]
 }

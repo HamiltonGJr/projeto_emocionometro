@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script src="../../../js/cadastro_professor.js" defer></script>
     <script src="../../../js/expandir_area_alu_pro.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -149,48 +150,50 @@
           <h2>Professor</h2>
         </div>
 
-        <form action="">
+        <form action="" id="formulario">
           <h2>Dados do usuário</h2>
 
           <div class="containerForm">
             <div>
-              <label for="">Nome</label>
+              <label for="name">Nome</label>
               <br />
               <input
                 type="text"
                 class="inputText"
                 placeholder="Digite seu nome..."
+                id="name"
               />
             </div>
 
             <div>
-              <label for="">Perfil</label>
+              <label for="perfil">Perfil</label>
               <br />
-              <select name="" id="">
+              <select name="perfil" id="perfil">
                 <option value="none" disabled selected>Qual o seu perfil...</option>
-                <option value="professor">Professor</option>
-                <option value="diretor">Diretor</option>
+                <option value="Professor">Professor</option>
+                <option value="Diretor">Diretor</option>
               </select>
             </div>
 
             <div>
-              <label for="">Disciplina</label>
+              <label for="disciplina">Disciplina</label>
               <br />
               <input
                 type="text"
                 class="inputText"
                 placeholder="Digite sua disciplina..."
+                id="disciplina"
               />
             </div>
 
             <div>
-              <label for="">Ativo</label>
+              <label for="ativo">Ativo</label>
               <br />
-              <input type="checkbox" />
+              <input type="checkbox" id="ativo"/>
             </div>
           </div>
 
-          <button>SALVAR</button>
+          <button type="submit">SALVAR</button>
         </form>
       </main>
     </div>
