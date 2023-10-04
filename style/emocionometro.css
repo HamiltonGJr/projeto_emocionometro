@@ -70,11 +70,11 @@ main {
 }
 
 .graficoPrincipal {
-  width: 680px;
+  width: 100%;
 }
 
 .graficoPercentual {
-  width: 300px;
+  width: 100%;
 
   border-radius: 25px;
 
@@ -84,13 +84,13 @@ main {
 .graficoEmocoes h2 {
   margin-bottom: 10px;
 
-  font-size: 16px;
+  font-size: 1.2em;
 }
 
 .graficoRegistro h2 {
-  font-size: 16px;
+  font-size: 1.2em;
 }
 
 .graficoRegistro h3 {
-  font-size: 45px;
+  font-size: 4em;
 }
