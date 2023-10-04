@@ -111,7 +111,7 @@ aside {
 }
 
 aside .containerButton {
-  margin: 15px 0 45px 0;
+  margin: 20% 0 25% 0;
 
   display: flex;
   flex-direction: column;
@@ -187,6 +187,8 @@ aside .containerButton button img {
 }
 
 .imgSeta {
+  margin: 0 0 0 40%;
+
   transition: 0.3s;
 }
 

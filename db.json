@@ -1,32 +1,29 @@
 {
   "aluno": [
     {
-      "nome": "Vinicius Coelho",
+      "nome": "Jessica",
       "turma": "Turma - 03",
-      "ativo": "on",
+      "ativo": true,
       "id": 1
     },
     {
-      "nome": "Vinicius Coelho",
-      "turma": "Turma - 03",
-      "ativo": "on",
+      "nome": "Vanessa",
+      "turma": "Turma - 01",
+      "ativo": false,
       "id": 2
+    },
+    {
+      "nome": "Jessica",
+      "turma": "Turma - 03",
+      "ativo": true,
+      "id": 3
+    },
+    {
+      "nome": "Hamilton",
+      "turma": "Turma - 03",
+      "ativo": false,
+      "id": 4
     }
   ],
-  "professor": [
-    {
-      "nome": "Vinicius Coelho",
-      "perfil": "Professor",
-      "disciplina": "Psicologia",
-      "ativo": "on",
-      "id": 1
-    },
-    {
-      "nome": "Calabreso",
-      "perfil": "Professor",
-      "disciplina": "Matemática",
-      "ativo": "on",
-      "id": 2
-    }
-  ]
+  "professor": []
 }

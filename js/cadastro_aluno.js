@@ -18,7 +18,7 @@ formulario.addEventListener('submit', (e) => {
 
   const nome = formulario.elements['name'].value
   const turma = formulario.elements['turma'].value
-  const ativo = formulario.elements['ativo'].value
+  const ativo = formulario.elements['ativo'].checked
 
   const aluno = {
     nome,
