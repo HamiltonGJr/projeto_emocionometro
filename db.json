@@ -25,5 +25,13 @@
       "id": 4
     }
   ],
-  "professor": []
+  "professor": [
+    {
+      "nome": "Calabreso",
+      "perfil": "Diretor",
+      "disciplina": "Matemática",
+      "ativo": true,
+      "id": 1
+    }
+  ]
 }

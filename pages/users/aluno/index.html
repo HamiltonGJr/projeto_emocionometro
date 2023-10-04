@@ -145,8 +145,10 @@
 
         <form action="">
           <div class="containerinputPesquisa">
-            <input type="text" placeholder="Pesquise uma palavra-chave" />
-            <img src="../../../assets/img/search.svg" alt="" />
+            <input type="search" placeholder="Pesquise uma palavra-chave" id="inputPesquisa"/>
+            <button onkeyup="filtroAluno()"">
+              <img src="../../../assets/img/search.svg" alt="" class="imgPesquisa"/>
+            </button>
           </div>
 
           <a href="../aluno/cadastro_aluno.html" class="botaoNovoUsuario">
