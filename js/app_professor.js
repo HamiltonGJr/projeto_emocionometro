@@ -12,7 +12,7 @@ const getProfessor = async () => {
         <td>${conteudo.perfil}</td>
         <td>${conteudo.ativo}</td>
         <td>          
-          <button class="buttonAcoes">
+          <button onclick="editarProfessor(${conteudo.id})" class="buttonAcoes">
             <img src="../../../assets/img/editar.svg" class="imgAcoes"/>
           </button>
 
@@ -30,4 +30,8 @@ const getProfessor = async () => {
 const deletarProfessor = async(id) => {
   await fetch(`http://localhost:3000/professor/${id}`,{method:'DELETE'})
   getProfessor()
+}
+
+const editarProfessor = (id) => {
+  window.location = `edicao_professor.html?id=${id}`
 }

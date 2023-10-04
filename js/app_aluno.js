@@ -11,7 +11,7 @@ const getAluno = async () => {
         <td>${conteudo.turma}</td>
         <td>${conteudo.ativo}</td>
         <td class="tdButtonAcoes">
-          <button class="buttonAcoes">
+          <button onclick="editarAluno(${conteudo.id})" class="buttonAcoes">
             <img src="../../../assets/img/editar.svg" class="imgAcoes"/>
           </button>
 
@@ -28,4 +28,8 @@ const getAluno = async () => {
 const deletarAluno = async(id) => {
   await fetch(`http://localhost:3000/aluno/${id}`,{method:'DELETE'})
   getAluno()
+}
+
+const editarAluno = (id) => {
+  window.location = `edicao_aluno.html?id=${id}`
 }
