@@ -11,18 +11,6 @@
       "turma": "Turma - 03",
       "ativo": "on",
       "id": 2
-    },
-    {
-      "nome": "Jessica",
-      "turma": "Turma - 00",
-      "ativo": "on",
-      "id": 3
-    },
-    {
-      "nome": "Vitoria",
-      "turma": "Turma - 25",
-      "ativo": "on",
-      "id": 4
     }
   ],
   "professor": [
