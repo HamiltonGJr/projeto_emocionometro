@@ -13,18 +13,18 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 5px;
+  gap: 0.2em;
 }
 
 .containerTexto h1 {
-  font-size: 25px;
+  font-size: 2.2em;
   font-weight: 700;
 
   color: #aa6f34;
 }
 
 .containerTexto h2 {
-  font-size: 35px;
+  font-size: 3em;
   font-weight: 700;
 
   color: #757575;
@@ -33,24 +33,20 @@ main {
 .containerFaleConosco {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 1em;
 
   position: absolute;
-  bottom: 25px;
-  right: 25px;
+  bottom: 4%;
+  right: 2%;
 }
 
 .containerFaleConosco h3 {
-  padding: 5px 10px;
-
-  font-size: 14px;
-
-  border-radius: 8px;
+  font-size: 1.1em;
 
   background-color: #fff;
 }
 
 .containerFaleConosco img {
-  width: 75px;
+  width: 40%;
   cursor: pointer;
 }
