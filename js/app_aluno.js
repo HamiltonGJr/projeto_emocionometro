@@ -33,15 +33,3 @@ const deletarAluno = async(id) => {
 const editarAluno = (id) => {
   window.location = `edicao_aluno.html?id=${id}`
 }
-
-const filtroAluno = async () => {
-  const inputPesquisa = document.getElementById('inputPesquisa').value
-  const apiURL = await fetch(`http://localhost:3000/aluno?nome_like=${inputPesquisa}`)
-  const aluno = await apiURL.json()
-
-  const alunoFiltrado = aluno.filter((usuario) => {
-    return usuario.nome.includes('')
-  })
-
-  getAluno(alunoFiltrado)
-}
