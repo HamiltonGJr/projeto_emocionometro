@@ -3,29 +3,56 @@
     {
       "nome": "Jessica",
       "turma": "Turma - 03",
-      "ativo": true,
+      "ativo": false,
       "id": 1
     },
     {
-      "nome": "Vanessa",
-      "turma": "Turma - 01",
+      "nome": "Calabreso",
+      "turma": "Turma - 03",
       "ativo": false,
       "id": 2
     },
     {
-      "nome": "Jessica",
+      "nome": "CNPJoto",
+      "turma": "Turma - 02",
+      "ativo": false,
+      "id": 3
+    },
+    {
+      "nome": "Hamilton",
       "turma": "Turma - 03",
       "ativo": true,
-      "id": 3
+      "id": 4
     }
   ],
   "professor": [
     {
-      "nome": "Calabreso",
+      "nome": "Jessica",
+      "perfil": "Professor",
+      "disciplina": "Matemática",
+      "ativo": false,
+      "id": 1
+    },
+    {
+      "nome": "Hamilton",
       "perfil": "Diretor",
       "disciplina": "Matemática",
-      "ativo": true,
-      "id": 1
+      "ativo": false,
+      "id": 2
+    },
+    {
+      "nome": "Hamilton",
+      "perfil": "Diretor",
+      "disciplina": "Matemática",
+      "ativo": false,
+      "id": 3
+    },
+    {
+      "nome": "Calabreso",
+      "perfil": "Professor",
+      "disciplina": "Psicologia",
+      "ativo": false,
+      "id": 4
     }
   ]
 }
