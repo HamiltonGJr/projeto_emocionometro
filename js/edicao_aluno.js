@@ -1,11 +1,11 @@
-const formulario = document.getElementById('formulario')
+const formulario = document.getElementById("formulario")
 
 let alunoID = null
 
 const getIdURL = () => {
   const paramString = window.location.search
   const params = new URLSearchParams(paramString)
-  alunoID = params.get('id')
+  alunoID = params.get("id")
 }
 
 const buscarAluno = async () => {
@@ -16,9 +16,9 @@ const buscarAluno = async () => {
 }
 
 const carregarDadosFormulario = async (aluno) => {
-  document.getElementById('name').value = aluno.nome
-  document.getElementById('turma').value = aluno.turma
-  document.getElementById('ativo').value = aluno.ativo
+  document.getElementById("name").value = aluno.nome
+  document.getElementById("turma").value = aluno.turma
+  document.getElementById("ativo").value = aluno.ativo
 }
 
 const carregarDados = async () => {
@@ -30,29 +30,29 @@ const carregarDados = async () => {
 }
 
 const editarAluno = async (aluno) => {
-  await fetch(`http://localhost:3000/aluno/${alunoID}`,{
-    method:'PUT',  
-    headers:{
-      'Accept': 'application/json, text/plain, */*',
-      'Content-Type': 'application/json'
+  await fetch(`http://localhost:3000/aluno/${alunoID}`, {
+    method: "PUT",
+    headers: {
+      Accept: "application/json, text/plain, */*",
+      "Content-Type": "application/json",
     },
-    body:JSON.stringify(aluno)
+    body: JSON.stringify(aluno),
   })
 
-  window.location.href = '../aluno/index.html'
+  window.location.href = "../aluno/index.html"
 }
 
-formulario.addEventListener('submit', (e) => {
+formulario.addEventListener("submit", (e) => {
   e.preventDefault()
 
-  const nome = formulario.elements['name'].value
-  const turma = formulario.elements['turma'].value
-  const ativo = formulario.elements['ativo'].value
+  const nome = formulario.elements["name"].value
+  const turma = formulario.elements["turma"].value
+  const ativo = formulario.elements["ativo"].value
 
   const aluno = {
     nome,
     turma,
-    ativo
+    ativo,
   }
 
   editarAluno(aluno)

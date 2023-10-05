@@ -1,6 +1,6 @@
 main {
   width: 100%;
-  background-color: #F5F4F9;
+  background-color: #f5f4f9;
 }
 
 .informacaoUser {
@@ -40,7 +40,7 @@ form {
   width: 300px;
   padding: 12px;
 
-  border: 1.5px solid #E0E0E0;
+  border: 1.5px solid #e0e0e0;
   border-radius: 08px;
 }
 
@@ -67,8 +67,8 @@ form {
 
   cursor: pointer;
 
-  color: #FFF;
-  background-color: #00C247;
+  color: #fff;
+  background-color: #00c247;
 }
 
 .botaoNovoUsuario img {
@@ -97,7 +97,7 @@ table {
 }
 
 .containerTabela table tbody tr {
-  border: 6px solid #F5F4F9;
+  border: 6px solid #f5f4f9;
 }
 
 .containerTabela table tbody tr td {
@@ -105,7 +105,7 @@ table {
 
   text-align: center;
 
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .bordaRadiusEsquerda {
@@ -126,7 +126,7 @@ table {
 
   cursor: pointer;
 
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .imgAcoes {

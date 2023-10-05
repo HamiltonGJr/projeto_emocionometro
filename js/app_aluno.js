@@ -1,8 +1,8 @@
 const getAluno = async () => {
-  const apiURL = await fetch('http://localhost:3000/aluno')
+  const apiURL = await fetch("http://localhost:3000/aluno")
   const aluno = await apiURL.json()
 
-  const tbody = document.getElementById('tbody')
+  const tbody = document.getElementById("tbody")
 
   aluno.forEach((conteudo) => {
     const dadoHTML = `
@@ -21,12 +21,12 @@ const getAluno = async () => {
         </td>
       </tr>
     `
-  tbody.innerHTML = tbody.innerHTML + dadoHTML
-})
+    tbody.innerHTML = tbody.innerHTML + dadoHTML
+  })
 }
 
-const deletarAluno = async(id) => {
-  await fetch(`http://localhost:3000/aluno/${id}`,{method:'DELETE'})
+const deletarAluno = async (id) => {
+  await fetch(`http://localhost:3000/aluno/${id}`, { method: "DELETE" })
   getAluno()
 }
 

@@ -1,29 +1,29 @@
-const formulario = document.getElementById('formulario')
+const formulario = document.getElementById("formulario")
 
 const cadastrarAluno = async (aluno) => {
-  await fetch('http://localhost:3000/aluno',{
-    method:'POST',  
-    headers:{
-      'Accept': 'application/json, text/plain, */*',
-      'Content-Type': 'application/json'
+  await fetch("http://localhost:3000/aluno", {
+    method: "POST",
+    headers: {
+      Accept: "application/json, text/plain, */*",
+      "Content-Type": "application/json",
     },
-    body:JSON.stringify(aluno)
+    body: JSON.stringify(aluno),
   })
 
-  window.location.href = '../aluno/index.html'
+  window.location.href = "../aluno/index.html"
 }
 
-formulario.addEventListener('submit', (e) => {
+formulario.addEventListener("submit", (e) => {
   e.preventDefault()
 
-  const nome = formulario.elements['name'].value
-  const turma = formulario.elements['turma'].value
-  const ativo = formulario.elements['ativo'].checked
+  const nome = formulario.elements["name"].value
+  const turma = formulario.elements["turma"].value
+  const ativo = formulario.elements["ativo"].checked
 
   const aluno = {
     nome,
     turma,
-    ativo
+    ativo,
   }
 
   cadastrarAluno(aluno)
