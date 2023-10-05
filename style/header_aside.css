@@ -141,7 +141,7 @@ aside .containerButton a:hover {
 }
 
 aside .containerButton button {
-  padding: 10px 0 10px 12px;
+  padding: 10px 20px 10px 12px;
 
   font-size: 16px;
   font-weight: 500;
@@ -187,7 +187,7 @@ aside .containerButton button img {
 }
 
 .imgSeta {
-  margin: 0 0 0 40%;
+  margin: 0 5% 0 40%;
 
   transition: 0.3s;
 }
