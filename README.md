@@ -5,10 +5,13 @@
 
  ~ Funcionalidades ~ 
 
- Emocionômetro:
+ Emocionômetro: Mostra alguns gráficos referente as informações do emocional do usúario.
 
- Home:
+ Home: Página principla, por ela você tem acesso as demais páginas.
 
- Login:
+ Login: Área de alunos e professores.
 
- Users:
+ Users -
+
+  Aluno: Nesta page você pode vizualizar, pesquisar, cadastrar, editar e excluir os cadastros dos alunos.
+  Professor: Nesta page você pode vizualizar, pesquisar, cadastrar, editar e excluir os cadastros dos professores.
