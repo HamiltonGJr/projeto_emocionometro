@@ -4,27 +4,27 @@ main {
 }
 
 .informacaoUser {
-  margin: 20px 0 0 25px;
+  margin: 1.5% 0 0 2%;;
 
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 0.3%;
 }
 
 .informacaoUser h1 {
-  font-size: 22px;
+  font-size: 1.8em;
 }
 
 .informacaoUser img {
-  width: 20px;
+  width: 1.5%;
 }
 
 .informacaoUser h2 {
-  font-size: 25px;
+  font-size: 1.9em;
 }
 
 form {
-  margin: 15px 25px 0 25px;
+  margin: 1.5% 2% 0 2%;
 
   display: flex;
   align-items: center;
@@ -37,8 +37,8 @@ form {
 }
 
 .containerinputPesquisa input {
-  width: 300px;
-  padding: 12px;
+  width: 30em;
+  padding: 3%;
 
   border: 1.5px solid #e0e0e0;
   border-radius: 08px;
@@ -50,10 +50,10 @@ form {
 }
 
 .botaoNovoUsuario {
-  width: 175px;
-  padding: 11px 0;
+  width: 13%;
+  padding: 0.8% 0;
 
-  font-size: 15px;
+  font-size: 1em;
   font-weight: 700;
   text-decoration: none;
 
@@ -63,7 +63,7 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 5%;
 
   cursor: pointer;
 
@@ -72,7 +72,7 @@ form {
 }
 
 .botaoNovoUsuario img {
-  width: 20px;
+  width: 12%;
 }
 
 .containerTabela {
@@ -84,15 +84,15 @@ form {
 
 table {
   width: 97%;
-  margin-top: 10px;
+  margin-top: 0.8%;
 
   border-collapse: collapse;
 }
 
 .containerTabela table thead tr th {
-  padding: 15px;
+  padding: 0.8%;
 
-  font-size: 14px;
+  font-size: 1em;
   text-align: center;
 }
 
@@ -101,25 +101,16 @@ table {
 }
 
 .containerTabela table tbody tr td {
-  padding: 6px 20px;
+    padding: 0.3% 0;
 
   text-align: center;
 
   background-color: #fff;
 }
 
-.bordaRadiusEsquerda {
-  border-radius: 8px 0 0 8px;
-}
-
-.bordaRadiusDireita {
-  border-radius: 0 8px 8px 0;
-}
-
 .buttonAcoes {
-  width: 40px;
-  height: 40px;
-  margin: 0 2px;
+  width: 9%;
+  margin: 0 0.3%;
 
   border: none;
   border-radius: 50%;
@@ -130,6 +121,6 @@ table {
 }
 
 .imgAcoes {
-  width: 30px;
-  margin-top: 3px;
+  width: 85%;
+  margin-top: 0.3%;
 }

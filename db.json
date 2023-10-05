@@ -17,12 +17,6 @@
       "turma": "Turma - 03",
       "ativo": true,
       "id": 3
-    },
-    {
-      "nome": "Hamilton",
-      "turma": "Turma - 03",
-      "ativo": false,
-      "id": 4
     }
   ],
   "professor": [
