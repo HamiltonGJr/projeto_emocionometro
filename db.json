@@ -1,12 +1,6 @@
 {
   "aluno": [
     {
-      "nome": "Jessica",
-      "turma": "Turma - 03",
-      "ativo": false,
-      "id": 1
-    },
-    {
       "nome": "Calabreso",
       "turma": "Turma - 03",
       "ativo": false,
@@ -27,25 +21,11 @@
   ],
   "professor": [
     {
-      "nome": "Jessica",
-      "perfil": "Professor",
-      "disciplina": "Matemática",
-      "ativo": false,
-      "id": 1
-    },
-    {
       "nome": "Hamilton",
       "perfil": "Diretor",
       "disciplina": "Matemática",
       "ativo": false,
       "id": 2
-    },
-    {
-      "nome": "Hamilton",
-      "perfil": "Diretor",
-      "disciplina": "Matemática",
-      "ativo": false,
-      "id": 3
     },
     {
       "nome": "Calabreso",

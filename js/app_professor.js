@@ -31,7 +31,7 @@ getProfessor()
 
 const deletarProfessor = async (id) => {
   await fetch(`http://localhost:3000/professor/${id}`, { method: "DELETE" })
-  getProfessor()
+  window.location = `index.html`
 }
 
 const editarProfessor = (id) => {
