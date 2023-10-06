@@ -6,7 +6,7 @@ const senha = document.getElementById("inputSenha")
 function fazerLogin() {
   if (email.value == "" && senha.value == "") {
   } else {
-    window.location.href = "../home/index.html"
+    window.location.href = "../login/loading.html"
   }
 }
 
@@ -21,3 +21,7 @@ function verificarInput() {
 }
 
 setInterval(verificarInput, 500)
+
+const redirecionamento = () => {
+  window.location.href = "../home/index.html"
+}

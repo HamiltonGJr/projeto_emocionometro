@@ -40,8 +40,10 @@ getAluno()
     const apiURL = await fetch(`http://localhost:3000/aluno?nome_like=${aluno}`)
     const alunoPesquisa = await apiURL.json()
 
-    const tbody = document.getElementById("tbody")
+    console.log(alunoPesquisa)
 
+    const tbody = document.getElementById("tbody")
+    tbody.innerHTML = ''
     alunoPesquisa.forEach((conteudo) => {
       const dadoHTML = `
         <tr>
@@ -59,7 +61,8 @@ getAluno()
           </td>
         </tr>
       `
-      tbody.innerHTML = dadoHTML
+      tbody.innerHTML = tbody.innerHTML + dadoHTML
+      // tbody.innerHTML = dadoHTML
     })
   }
 

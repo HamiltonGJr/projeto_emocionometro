@@ -17,6 +17,24 @@
       "turma": "Turma - 01",
       "ativo": true,
       "id": 5
+    },
+    {
+      "nome": "Claudio Arraio",
+      "turma": "Teste malandrão",
+      "ativo": true,
+      "id": 7
+    },
+    {
+      "nome": "Hamilton",
+      "turma": "Turma - 00",
+      "ativo": false,
+      "id": 8
+    },
+    {
+      "nome": "Hamilton",
+      "turma": "Turma - 01",
+      "ativo": false,
+      "id": 9
     }
   ],
   "professor": [
@@ -33,6 +51,27 @@
       "disciplina": "Matemática",
       "ativo": false,
       "id": 3
+    },
+    {
+      "nome": "Hamilton",
+      "perfil": "Professor",
+      "disciplina": "Matemática",
+      "ativo": false,
+      "id": 4
+    },
+    {
+      "nome": "Calabreso",
+      "perfil": "Professor",
+      "disciplina": "Psicologia",
+      "ativo": false,
+      "id": 5
+    },
+    {
+      "nome": "Hamilton Gonçalves ",
+      "perfil": "Professor",
+      "disciplina": "Matemática",
+      "ativo": false,
+      "id": 6
     }
   ]
 }
