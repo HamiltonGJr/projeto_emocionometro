@@ -42,6 +42,9 @@ main {
 
 .containerFaleConosco h3 {
   font-size: 1.1em;
+  padding: 3px 15px;
+
+  border-radius: 8px;
 
   background-color: #fff;
 }

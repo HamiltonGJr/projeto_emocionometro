@@ -7,32 +7,32 @@
       "id": 2
     },
     {
-      "nome": "CNPJoto",
-      "turma": "Turma - 02",
+      "nome": "Vanessa",
+      "turma": "Turma - 01",
       "ativo": false,
       "id": 3
     },
     {
-      "nome": "Hamilton",
-      "turma": "Turma - 03",
+      "nome": "juliana coelho valter",
+      "turma": "Turma - 01",
       "ativo": true,
-      "id": 4
+      "id": 5
     }
   ],
   "professor": [
     {
-      "nome": "Hamilton",
+      "nome": "Hamilton Gonçalves ",
       "perfil": "Diretor",
       "disciplina": "Matemática",
-      "ativo": false,
+      "ativo": "false",
       "id": 2
     },
     {
-      "nome": "Calabreso",
+      "nome": "Jessica",
       "perfil": "Professor",
-      "disciplina": "Psicologia",
+      "disciplina": "Matemática",
       "ativo": false,
-      "id": 4
+      "id": 3
     }
   ]
 }
