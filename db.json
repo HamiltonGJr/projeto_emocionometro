@@ -3,38 +3,20 @@
     {
       "nome": "Calabreso",
       "turma": "Turma - 03",
-      "ativo": false,
+      "ativo": true,
       "id": 2
     },
     {
       "nome": "Vanessa",
       "turma": "Turma - 01",
-      "ativo": false,
+      "ativo": true,
       "id": 3
     },
     {
-      "nome": "juliana coelho valter",
-      "turma": "Turma - 01",
-      "ativo": true,
-      "id": 5
-    },
-    {
-      "nome": "Claudio Arraio",
-      "turma": "Teste malandrão",
-      "ativo": true,
-      "id": 7
-    },
-    {
       "nome": "Hamilton",
-      "turma": "Turma - 00",
-      "ativo": false,
-      "id": 8
-    },
-    {
-      "nome": "Hamilton",
-      "turma": "Turma - 01",
-      "ativo": false,
-      "id": 9
+      "turma": "Turma - 03",
+      "ativo": true,
+      "id": 4
     }
   ],
   "professor": [
@@ -70,8 +52,22 @@
       "nome": "Hamilton Gonçalves ",
       "perfil": "Professor",
       "disciplina": "Matemática",
-      "ativo": false,
+      "ativo": "false",
       "id": 6
+    },
+    {
+      "nome": "",
+      "perfil": "none",
+      "disciplina": "",
+      "ativo": true,
+      "id": 7
+    },
+    {
+      "nome": "Hamilton",
+      "perfil": "Professor",
+      "disciplina": "Matemática",
+      "ativo": true,
+      "id": 8
     }
   ]
 }
