@@ -101,7 +101,7 @@ header {
 
 aside {
   width: 20%;
-  height: 90.5vh;
+  min-height: 90.5vh;
 
   display: flex;
   flex-direction: column;
