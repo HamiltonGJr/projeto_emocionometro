@@ -3,7 +3,7 @@
     {
       "nome": "Calabreso",
       "turma": "Turma - 03",
-      "ativo": true,
+      "ativo": false,
       "id": 2
     },
     {
@@ -15,8 +15,20 @@
     {
       "nome": "Hamilton",
       "turma": "Turma - 03",
-      "ativo": true,
+      "ativo": false,
       "id": 4
+    },
+    {
+      "nome": "Jessica",
+      "turma": "Turma - 03",
+      "ativo": false,
+      "id": 5
+    },
+    {
+      "nome": "Hamilton Gonçalves ",
+      "turma": "Turma - 03",
+      "ativo": false,
+      "id": 6
     }
   ],
   "professor": [
