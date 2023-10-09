@@ -6,7 +6,7 @@ const senha = document.getElementById("inputSenha")
 function fazerLogin() {
   if (email.value == "" && senha.value == "") {
   } else {
-    window.location.href = "../login/loading.html"
+    window.location.href = "./pages/login/loading.html"
   }
 }
 
