@@ -27,6 +27,7 @@ const carregarDados = async () => {
   const aluno = await buscarAluno()
 
   carregarDadosFormulario(aluno)
+  console.log(aluno)
 }
 
 const editarAluno = async (aluno) => {
@@ -56,6 +57,8 @@ formulario.addEventListener("submit", (e) => {
   }
 
   editarAluno(aluno)
+
+  console.log(aluno)
 })
 
 carregarDados()
