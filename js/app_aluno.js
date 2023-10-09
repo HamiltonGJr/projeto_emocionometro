@@ -1,5 +1,5 @@
 const getAluno = async () => {
-  const apiURL = await fetch("http://localhost:3000/aluno")
+  const apiURL = await fetch("https://db-json-emocion.onrender.com/aluno")
   const aluno = await apiURL.json()
 
   const tbody = document.getElementById("tbody")
@@ -28,7 +28,7 @@ const getAluno = async () => {
 getAluno()
 
   const deletarAluno = async (id) => {
-    await fetch(`http://localhost:3000/aluno/${id}`, { method: "DELETE" })
+    await fetch(`https://db-json-emocion.onrender.com/aluno/${id}`, { method: "DELETE" })
     window.location = `index.html`
   }
 
@@ -37,7 +37,7 @@ getAluno()
   }
 
   const pesquisarAluno = async (aluno) => {
-    const apiURL = await fetch(`http://localhost:3000/aluno?nome_like=${aluno}`)
+    const apiURL = await fetch(`https://db-json-emocion.onrender.com/aluno?nome_like=${aluno}`)
     const alunoPesquisa = await apiURL.json()
 
     console.log(alunoPesquisa)

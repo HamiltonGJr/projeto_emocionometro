@@ -9,7 +9,7 @@ const getIdURL = () => {
 }
 
 const buscarProfessor = async () => {
-  const response = await fetch(`http://localhost:3000/professor/${professorID}`)
+  const response = await fetch(`https://db-json-emocion.onrender.com/professor/${professorID}`)
   const professor = await response.json()
 
   return professor
@@ -31,7 +31,7 @@ const carregarDados = async () => {
 }
 
 const editarProfessor = async (professor) => {
-  await fetch(`http://localhost:3000/professor/${professorID}`,{
+  await fetch(`https://db-json-emocion.onrender.com/professor/${professorID}`,{
     method:'PUT',  
     headers:{
       'Accept': 'application/json, text/plain, */*',

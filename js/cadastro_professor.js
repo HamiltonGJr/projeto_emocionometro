@@ -1,7 +1,7 @@
 const formulario = document.getElementById('formulario')
 
 const cadastrarProfessor = async (professor) => {
-  await fetch('http://localhost:3000/professor',{
+  await fetch('https://db-json-emocion.onrender.com/professor',{
     method:'POST',  
     headers:{
       'Accept': 'application/json, text/plain, */*',

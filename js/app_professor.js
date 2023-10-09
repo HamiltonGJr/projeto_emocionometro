@@ -1,5 +1,5 @@
 const getProfessor = async () => {
-  const apiURL = await fetch("http://localhost:3000/professor")
+  const apiURL = await fetch("https://db-json-emocion.onrender.com/professor")
   const professor = await apiURL.json()
 
   const tbody = document.getElementById("tbody")
@@ -30,7 +30,7 @@ const getProfessor = async () => {
 getProfessor()
 
 const deletarProfessor = async (id) => {
-  await fetch(`http://localhost:3000/professor/${id}`, { method: "DELETE" })
+  await fetch(`https://db-json-emocion.onrender.com/professor/${id}`, { method: "DELETE" })
   window.location = `index.html`
 }
 
@@ -39,7 +39,7 @@ const editarProfessor = (id) => {
 }
 
 const pesquisarProfessor = async (professor) => {
-  const apiURL = await fetch(`http://localhost:3000/professor?nome_like=${professor}`)
+  const apiURL = await fetch(`https://db-json-emocion.onrender.com/professor?nome_like=${professor}`)
   const professorPesquisa = await apiURL.json()
 
   const tbody = document.getElementById("tbody")
