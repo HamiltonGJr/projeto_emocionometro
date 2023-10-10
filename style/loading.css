@@ -91,7 +91,7 @@ body {
 }
 /*LOADING*/
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
     .containerPrincipal {
         width: 100%;
         height: 100vh;
@@ -120,4 +120,4 @@ body {
     
         color: #424242;
     }
-  }
+  } */

@@ -233,3 +233,63 @@ aside .containerButton button img {
   background-color: #faa61a !important;
 }
 /* ASIDE */
+
+/* @media screen and (max-width: 480px) {
+  header {
+    width: 100%;
+    height: 6vh;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .containerUsuario {
+    display: none;
+  }
+
+  .divConteudoPrincipalMaisAside {
+    width: 100%;
+    height: 6vh;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+  
+    background-color: #f9e423;
+  }
+
+  aside {
+    width: 100%;
+    min-height: 6vh;
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  
+    background-color: #f9e423;
+  }
+
+  .containerButton {
+    width: 50%;
+    padding: 0;
+    margin: 0 !important;
+
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .imgSeta {
+    display: none;
+  }
+
+  p {
+    display: none;
+  }
+
+  .containerAreaUsers {
+    display: flex;
+    flex-direction: column;
+  }
+} */

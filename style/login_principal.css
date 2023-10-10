@@ -162,7 +162,7 @@ form .cadastrarSe {
   background-color: #00c249 !important;
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .baner {
     display: none;
   }
@@ -171,4 +171,4 @@ form .cadastrarSe {
     width: 100%;
     height: 100vh;
   }
-}
+} */
