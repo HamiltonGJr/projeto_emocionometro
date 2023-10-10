@@ -144,9 +144,24 @@ aside .containerButton a:hover {
   transition: 0.3s;
 }
 
-/* aside .containerButton a:hover img {
-  fill: white;
-} */
+i {
+  color: #AA6F34;
+
+  transition: 0.3s;
+}
+
+aside .containerButton a:hover i {
+  color: #fff;
+
+  transition: 0.3s;
+}
+
+aside .containerButton button:hover i {
+  color: #fff;
+
+  transition: 0.3s;
+}
+
 
 aside .containerButton button {
   padding: 10px 20px 10px 12px;
@@ -188,10 +203,6 @@ aside .containerButton #containerAreaUsers .user:hover {
   background-color: #f48221;
 
   transition: 0.3s;
-}
-
-aside .containerButton a img {
-  width: 25px;
 }
 
 aside .containerButton button img {
