@@ -131,6 +131,8 @@ aside .containerButton a {
   cursor: pointer;
 
   color: #aa6f34;
+
+  transition: 0.3s;
 }
 
 aside .containerButton a:hover {
@@ -138,11 +140,13 @@ aside .containerButton a:hover {
 
   color: #fff;
   background-color: #faa61a;
+
+  transition: 0.3s;
 }
 
-aside .containerButton a:hover img {
+/* aside .containerButton a:hover img {
   fill: white;
-}
+} */
 
 aside .containerButton button {
   padding: 10px 20px 10px 12px;
@@ -161,6 +165,8 @@ aside .containerButton button {
 
   color: #aa6f34;
   background-color: #f9e423;
+
+    transition: 0.3s;
 }
 
 aside .containerButton button:hover {
@@ -168,14 +174,20 @@ aside .containerButton button:hover {
 
   color: #fff;
   background-color: #faa61a;
+
+  transition: 0.3s;
 }
 
 aside .containerButton #containerAreaUsers {
   display: none;
+
+  transition: 0.3s;
 }
 
 aside .containerButton #containerAreaUsers .user:hover {
   background-color: #f48221;
+
+  transition: 0.3s;
 }
 
 aside .containerButton a img {
@@ -200,7 +212,7 @@ aside .containerButton button img {
 
 .imgSetaBaixo {
   transform: rotate(88deg);
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .containerButtonSelecionado {
