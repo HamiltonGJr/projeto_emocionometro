@@ -19,7 +19,7 @@ const carregarDadosFormulario = async (professor) => {
   document.getElementById('name').value = professor.nome
   document.getElementById('perfil').value = professor.perfil
   document.getElementById('disciplina').value = professor.disciplina
-  document.getElementById('ativo').value = professor.ativo
+  document.getElementById('ativo').checked = professor.ativo
 }
 
 const carregarDados = async () => {
@@ -49,7 +49,7 @@ formulario.addEventListener('submit', (e) => {
   const nome = formulario.elements['name'].value
   const perfil = formulario.elements['perfil'].value
   const disciplina = formulario.elements['disciplina'].value
-  const ativo = formulario.elements['ativo'].value
+  const ativo = formulario.elements['ativo'].checked
 
   const professor = {
     nome,

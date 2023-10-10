@@ -18,7 +18,7 @@ const buscarAluno = async () => {
 const carregarDadosFormulario = async (aluno) => {
   document.getElementById("name").value = aluno.nome
   document.getElementById("turma").value = aluno.turma
-  document.getElementById("ativo").value = aluno.ativo
+  document.getElementById("ativo").checked = aluno.ativo
 }
 
 const carregarDados = async () => {
@@ -27,7 +27,6 @@ const carregarDados = async () => {
   const aluno = await buscarAluno()
 
   carregarDadosFormulario(aluno)
-  console.log(aluno)
 }
 
 const editarAluno = async (aluno) => {
@@ -57,8 +56,6 @@ formulario.addEventListener("submit", (e) => {
   }
 
   editarAluno(aluno)
-
-  console.log(aluno)
 })
 
 carregarDados()
