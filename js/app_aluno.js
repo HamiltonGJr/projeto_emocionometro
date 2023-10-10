@@ -68,7 +68,6 @@ getAluno()
         </tr>
       `
       tbody.innerHTML = tbody.innerHTML + dadoHTML
-      // tbody.innerHTML = dadoHTML
     })
   }
 
