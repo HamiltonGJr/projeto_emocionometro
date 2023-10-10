@@ -1,8 +1,8 @@
 const getProfessor = async () => {
-  const apiURL = await fetch("https://db-json-emocion.onrender.com/professor");
-  const professor = await apiURL.json();
+  const apiURL = await fetch("https://db-json-emocion.onrender.com/professor")
+  const professor = await apiURL.json()
 
-  const tbody = document.getElementById("tbody");
+  const tbody = document.getElementById("tbody")
 
   professor.forEach((conteudo) => {
 
@@ -32,32 +32,32 @@ const getProfessor = async () => {
           </button>
         </td>
       </tr>
-    `;
+    `
 
-    tbody.innerHTML = tbody.innerHTML + dadoHTML;
-  });
-};
+    tbody.innerHTML = tbody.innerHTML + dadoHTML
+  })
+}
 
-getProfessor();
+getProfessor()
 
 const deletarProfessor = async (id) => {
   await fetch(`https://db-json-emocion.onrender.com/professor/${id}`, {
     method: "DELETE",
-  });
-  window.location = `index.html`;
-};
+  })
+  window.location = `index.html`
+}
 
 const editarProfessor = (id) => {
-  window.location = `edicao_professor.html?id=${id}`;
-};
+  window.location = `edicao_professor.html?id=${id}`
+}
 
 const pesquisarProfessor = async (professor) => {
   const apiURL = await fetch(
     `https://db-json-emocion.onrender.com/professor?nome_like=${professor}`
-  );
-  const professorPesquisa = await apiURL.json();
+  )
+  const professorPesquisa = await apiURL.json()
 
-  const tbody = document.getElementById("tbody");
+  const tbody = document.getElementById("tbody")
 
   professorPesquisa.forEach((conteudo) => {
     const dadoHTML = `
@@ -76,17 +76,17 @@ const pesquisarProfessor = async (professor) => {
         </button>
       </td>
     </tr>
-    `;
-    tbody.innerHTML = dadoHTML;
-  });
-};
+    `
+    tbody.innerHTML = dadoHTML
+  })
+}
 
-const form = document.getElementById("form");
+const form = document.getElementById("form")
 
 form.addEventListener("submit", (event) => {
-  event.preventDefault();
+  event.preventDefault()
 
-  const inputPesquisa = document.getElementById("inputPesquisa").value;
+  const inputPesquisa = document.getElementById("inputPesquisa").value
 
-  pesquisarProfessor(inputPesquisa);
-});
+  pesquisarProfessor(inputPesquisa)
+})

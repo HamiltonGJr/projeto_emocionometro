@@ -81,6 +81,14 @@ form .salvar {
 
   color: #fff;
   background-color: #00c247;
+
+  transition: 0.3s;
+}
+
+.salvar:hover {
+  background-color: #00a03b;
+
+  transition: 0.3s;
 }
 
 /* TOGLEE */
