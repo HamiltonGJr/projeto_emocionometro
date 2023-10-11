@@ -1,5 +1,5 @@
 const getAluno = async () => {
-  const apiURL = await fetch("https://db-json-emocion.onrender.com/aluno")
+  const apiURL = await fetch("https://db-json-emocion.onrender.com/aluno?_page=7&_limit=20")
   const aluno = await apiURL.json()
 
   const tbody = document.getElementById("tbody")
