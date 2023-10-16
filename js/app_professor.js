@@ -90,3 +90,38 @@ form.addEventListener("submit", (event) => {
 
   pesquisarProfessor(inputPesquisa)
 })
+
+const ordernarProfessor = async (aluno) => {
+  const apiURL = await fetch(`https://db-json-emocion.onrender.com/professor?_sort=nome&_order=`)
+  const professorOrdernar = await apiURL.json()
+
+  const tbody = document.getElementById("tbody")
+  tbody.innerHTML = ''
+  professorOrdernar.forEach((conteudo) => {
+    const dadoHTML = `
+    <tr>
+      <td>${conteudo.nome}</td>
+      <td>${conteudo.disciplina}</td>
+      <td>${conteudo.perfil}</td>
+      <td>
+      ${
+        conteudo.ativo
+        ? "<img src='../../../assets/img/Toggle_Ativo.svg' class='imgButton' />"
+        : "<img src='../../../assets/img/Toggle_Nao_Ativo.svg' class='imgButton' />"
+      }
+    </td>
+      <td>          
+        <button onclick="editarProfessor(${conteudo.id})" class="buttonAcoes" type="submit">
+          <img src="../../../assets/img/editar.svg" class="imgAcoes"/>
+        </button>
+
+        <button onclick="deletarProfessor(${conteudo.id})" class="buttonAcoes" type="submit">
+          <img src="../../../assets/img/remover.svg" class="imgAcoes"/>
+        </button>
+      </td>
+    </tr>
+    `
+
+    tbody.innerHTML = tbody.innerHTML + dadoHTML
+  })
+}
