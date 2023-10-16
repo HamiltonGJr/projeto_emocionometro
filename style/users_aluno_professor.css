@@ -99,14 +99,6 @@ table {
 
 .nomeThead {
   cursor: pointer;
-
-  transition: 0.4s;
-}
-
-.nomeThead:hover {
-  font-size: 1.1em;
-
-  transition: 0.4s;
 }
 
 .containerTabela table thead tr th {

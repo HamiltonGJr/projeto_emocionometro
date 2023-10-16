@@ -109,15 +109,15 @@ const ordernarProfessor = async (aluno) => {
         ? "<img src='../../../assets/img/Toggle_Ativo.svg' class='imgButton' />"
         : "<img src='../../../assets/img/Toggle_Nao_Ativo.svg' class='imgButton' />"
       }
-    </td>
-      <td>          
-        <button onclick="editarProfessor(${conteudo.id})" class="buttonAcoes" type="submit">
-          <img src="../../../assets/img/editar.svg" class="imgAcoes"/>
-        </button>
+      </td>
+        <td>          
+          <button onclick="editarProfessor(${conteudo.id})" class="buttonAcoes" type="submit">
+            <img src="../../../assets/img/editar.svg" class="imgAcoes"/>
+          </button>
 
-        <button onclick="deletarProfessor(${conteudo.id})" class="buttonAcoes" type="submit">
-          <img src="../../../assets/img/remover.svg" class="imgAcoes"/>
-        </button>
+          <button onclick="deletarProfessor(${conteudo.id})" class="buttonAcoes" type="submit">
+           <img src="../../../assets/img/remover.svg" class="imgAcoes"/>
+          </button>
       </td>
     </tr>
     `
