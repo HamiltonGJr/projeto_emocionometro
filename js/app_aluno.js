@@ -56,7 +56,13 @@ const pesquisarAluno = async (aluno) => {
       <tr>
         <td>${conteudo.nome}</td>
         <td>${conteudo.turma}</td>
-        <td>${conteudo.ativo}</td>
+        <td>
+          ${
+            conteudo.ativo
+            ? "<img src='../../../assets/img/Toggle_Ativo.svg' class='imgButton' />"
+            : "<img src='../../../assets/img/Toggle_Nao_Ativo.svg' class='imgButton' />"
+          }
+        </td>
         <td class="tdButtonAcoes">
           <button onclick="editarAluno(${conteudo.id})" class="buttonAcoes">
             <img src="../../../assets/img/editar.svg" class="imgAcoes"/>
