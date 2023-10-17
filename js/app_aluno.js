@@ -82,7 +82,7 @@ form.addEventListener('submit', (event) =>{
   pesquisarAluno(inputPesquisa)
 })
 
-// ORDERNAR
+// ORDERNAR ALFABETICA
 const ordernarAluno = async (aluno) => {
   const apiURL = await fetch(`https://db-json-emocion.onrender.com/aluno?_sort=nome&_order=`)
   const alunoOrdernar = await apiURL.json()
@@ -90,6 +90,40 @@ const ordernarAluno = async (aluno) => {
   const tbody = document.getElementById("tbody")
   tbody.innerHTML = ''
   alunoOrdernar.forEach((conteudo) => {
+    const dadoHTML = `
+      <tr>
+        <td>${conteudo.nome}</td>
+        <td>${conteudo.turma}</td>
+        <td>
+          ${
+            conteudo.ativo
+            ? "<img src='../../../assets/img/Toggle_Ativo.svg' class='imgButton' />"
+            : "<img src='../../../assets/img/Toggle_Nao_Ativo.svg' class='imgButton' />"
+          }
+        </td>
+        <td class="tdButtonAcoes">
+          <button onclick="editarAluno(${conteudo.id})" class="buttonAcoes">
+            <img src="../../../assets/img/editar.svg" class="imgAcoes"/>
+          </button>
+
+          <button onclick="deletarAluno(${conteudo.id})" class="buttonAcoes">
+            <img src="../../../assets/img/remover.svg" class="imgAcoes"/>
+          </button>
+        </td>
+      </tr>
+    `
+    tbody.innerHTML = tbody.innerHTML + dadoHTML
+  })
+}
+
+// ORDERNAR DE ATIVO
+const ordernarAlunoAtivo = async (aluno) => {
+  const apiURL = await fetch(`https://db-json-emocion.onrender.com/aluno?_sort=ativo&_order=desc`)
+  const alunoOrdernarAtivo = await apiURL.json()
+
+  const tbody = document.getElementById("tbody")
+  tbody.innerHTML = ''
+  alunoOrdernarAtivo.forEach((conteudo) => {
     const dadoHTML = `
       <tr>
         <td>${conteudo.nome}</td>

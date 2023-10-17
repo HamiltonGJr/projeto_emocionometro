@@ -6,7 +6,10 @@
 
     <script src="../../../js/app_professor.js" defer></script>
     <script src="../../../js/expandir_area_alu_pro.js" defer></script>
-    <script src="https://kit.fontawesome.com/8ca71be8e5.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/8ca71be8e5.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,7 +28,11 @@
     <link rel="stylesheet" href="../../../style/header_aside.css" />
     <link rel="stylesheet" href="../../../style/users_aluno_professor.css" />
 
-    <link rel="shortcut icon" href="../../../assets/img/image-2.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../../../assets/img/image-2.ico"
+      type="image/x-icon"
+    />
 
     <title>Professor | HG</title>
   </head>
@@ -85,10 +92,10 @@
             <i class="fa-sharp fa-solid fa-user-plus fa-xl"></i>
 
             <p>Usúarios</p>
-            
+
             <i class="fa-solid fa-chevron-right fa-lg imgSeta" id="imgSeta"></i>
           </button>
-          
+
           <div id="containerAreaUsers">
             <a class="user" href="../../users/aluno/index.html">
               <p>Aluno</p>
@@ -129,7 +136,11 @@
 
         <form action="" id="form">
           <div class="containerinputPesquisa">
-            <input type="text" placeholder="Pesquise uma palavra-chave" id="inputPesquisa"/>
+            <input
+              type="text"
+              placeholder="Pesquise uma palavra-chave"
+              id="inputPesquisa"
+            />
             <img src="../../../assets/img/search.svg" alt="" />
           </div>
 
@@ -146,10 +157,22 @@
           <table>
             <thead>
               <tr>
-                <th class="nomeThead" onclick="ordernarProfessor()">Nome <i class="fa-solid fa-arrow-up fa-sm" style="color: #000000;"></i></th>
+                <th class="nomeThead" onclick="ordernarProfessor()">
+                  Nome
+                  <i
+                    class="fa-solid fa-arrow-up fa-sm"
+                    style="color: #000000"
+                  ></i>
+                </th>
                 <th>Disciplina</th>
                 <th>Perfil</th>
-                <th>Ativo</th>
+                <th class="nomeThead" onclick="ordernarProfessorAtivo()">
+                  Ativo
+                  <i
+                    class="fa-solid fa-arrow-up fa-sm"
+                    style="color: #000000"
+                  ></i>
+                </th>
                 <th>Ações</th>
               </tr>
             </thead>
