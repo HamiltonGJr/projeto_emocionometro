@@ -1,123 +1,92 @@
 * {
-    margin: 0;
-    padding: 0;
-  
-    font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Nunito", sans-serif;
 }
 
 body {
-    background-color: #F5F4F9;
-    display: flex;
-    justify-content: center;
+  background-color: #f5f4f9;
+  display: flex;
+  justify-content: center;
 }
 
 .containerPrincipal {
-    margin-top: 11%;
-    width: 30%;
-    height: 50vh;
+  margin-top: 11%;
+  width: 30%;
+  height: 50vh;
 
-    border-radius: 60px;
+  border-radius: 60px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    background-color: #FFF;
+  background-color: #fff;
 }
 
 .containerPrincipal h1 {
-    padding: 9% 0 2% 0;
-    font-size: 2em;
+  padding: 9% 0 2% 0;
+  font-size: 2em;
 
-    color: #212121;
+  color: #212121;
 }
 
 .containerPrincipal h2 {
-    font-size: 1.3em;
-    font-weight: 400;
+  font-size: 1.3em;
+  font-weight: 400;
 
-    color: #424242;
+  color: #424242;
 }
 
-/*CONTAINER*/  
+/*CONTAINER*/
 
 .loading {
-    display: flex;
+  display: flex;
 }
 
 .circulo {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    margin: 8px;  
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 8px;
 }
 
 .loading div {
-    animation: bounce .6s cubic-bezier(0.6,0.1,1,0.4);
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  animation: bounce 0.6s cubic-bezier(0.6, 0.1, 1, 0.4);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .loading div:nth-child(1) {
-    animation-delay: .1s;
-    background-color: #807028;
+  animation-delay: 0.1s;
+  background-color: #807028;
 }
 
 .loading div:nth-child(2) {
-    animation-delay: .2s;
-    background-color: #675A20;
+  animation-delay: 0.2s;
+  background-color: #675a20;
 }
 
 .loading div:nth-child(3) {
-    animation-delay: .3s;
-    background-color: #4D4418;
+  animation-delay: 0.3s;
+  background-color: #4d4418;
 }
 
 .loading div:nth-child(4) {
-    animation-delay: .4s;
-    background-color: #332D10;
+  animation-delay: 0.4s;
+  background-color: #332d10;
 }
 
 .loading div:nth-child(5) {
-    animation-delay: .5s;
-    background-color: #332D10;
+  animation-delay: 0.5s;
+  background-color: #332d10;
 }
 
 @keyframes bounce {
-    to {
-        transform: translateY(50px);
-    }
+  to {
+    transform: translateY(50px);
+  }
 }
 /*LOADING*/
-
-/* @media screen and (max-width: 480px) {
-    .containerPrincipal {
-        width: 100%;
-        height: 100vh;
-        margin-top: 0;
-
-        border-radius: 0;
-    }
-
-    .circulo {
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        margin: 8px;  
-    }
-
-    .containerPrincipal h1 {
-        padding: 9% 0 2% 0;
-        font-size: 1.8em;
-    
-        color: #212121;
-    }
-
-    .containerPrincipal h2 {
-        font-size: 1em;
-        font-weight: 400;
-    
-        color: #424242;
-    }
-  } */

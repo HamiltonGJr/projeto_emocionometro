@@ -118,7 +118,7 @@ select {
 
   transition: all 300ms ease-in-out;
 
-  background-color: #FF3333;
+  background-color: #ff3333;
 }
 
 .botao {
@@ -136,7 +136,7 @@ select {
 
   transition: all 300ms ease-in-out;
 
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .ativo:checked ~ .slider {
