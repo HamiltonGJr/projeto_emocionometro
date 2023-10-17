@@ -33,15 +33,18 @@ const getAluno = async () => {
 
 getAluno()
 
+// DELETAR
 const deletarAluno = async (id) => {
   await fetch(`https://db-json-emocion.onrender.com/aluno/${id}`, { method: "DELETE" })
   window.location = `index.html`
 }
 
+// REDIRECIONAR A EDIÇÃO
 const editarAluno = (id) => {
   window.location = `edicao_aluno.html?id=${id}`
 }
 
+// PESQUISAR
 const pesquisarAluno = async (aluno) => {
   const apiURL = await fetch(`https://db-json-emocion.onrender.com/aluno?nome_like=${aluno}`)
   const alunoPesquisa = await apiURL.json()
@@ -79,6 +82,7 @@ form.addEventListener('submit', (event) =>{
   pesquisarAluno(inputPesquisa)
 })
 
+// ORDERNAR
 const ordernarAluno = async (aluno) => {
   const apiURL = await fetch(`https://db-json-emocion.onrender.com/aluno?_sort=nome&_order=`)
   const alunoOrdernar = await apiURL.json()

@@ -40,6 +40,7 @@ const getProfessor = async () => {
 
 getProfessor()
 
+// DELETAR
 const deletarProfessor = async (id) => {
   await fetch(`https://db-json-emocion.onrender.com/professor/${id}`, {
     method: "DELETE",
@@ -47,10 +48,12 @@ const deletarProfessor = async (id) => {
   window.location = `index.html`
 }
 
+// REDIRECIONAR A EDIÇÃO
 const editarProfessor = (id) => {
   window.location = `edicao_professor.html?id=${id}`
 }
 
+// PESQUISAR
 const pesquisarProfessor = async (professor) => {
   const apiURL = await fetch(
     `https://db-json-emocion.onrender.com/professor?nome_like=${professor}`
@@ -91,6 +94,7 @@ form.addEventListener("submit", (event) => {
   pesquisarProfessor(inputPesquisa)
 })
 
+// ORDERNAR
 const ordernarProfessor = async (aluno) => {
   const apiURL = await fetch(`https://db-json-emocion.onrender.com/professor?_sort=nome&_order=`)
   const professorOrdernar = await apiURL.json()
