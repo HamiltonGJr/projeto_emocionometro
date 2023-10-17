@@ -5,7 +5,6 @@ const getProfessor = async () => {
   const tbody = document.getElementById("tbody")
 
   professor.forEach((conteudo) => {
-
     const dadoHTML = `
       <tr>
         <td>${conteudo.nome}</td>
@@ -14,8 +13,8 @@ const getProfessor = async () => {
         <td>
           ${
             conteudo.ativo
-            ? "<img src='../../../assets/img/Toggle_Ativo.svg' class='imgButton' />"
-            : "<img src='../../../assets/img/Toggle_Nao_Ativo.svg' class='imgButton' />"
+              ? "<img src='../../../assets/img/Toggle_Ativo.svg' class='imgButton' />"
+              : "<img src='../../../assets/img/Toggle_Nao_Ativo.svg' class='imgButton' />"
           }
         </td>
         <td>          
@@ -71,16 +70,20 @@ const pesquisarProfessor = async (professor) => {
       <td>
       ${
         conteudo.ativo
-        ? "<img src='../../../assets/img/Toggle_Ativo.svg' class='imgButton' />"
-        : "<img src='../../../assets/img/Toggle_Nao_Ativo.svg' class='imgButton' />"
+          ? "<img src='../../../assets/img/Toggle_Ativo.svg' class='imgButton' />"
+          : "<img src='../../../assets/img/Toggle_Nao_Ativo.svg' class='imgButton' />"
       }
       </td>
         <td>          
-          <button onclick="editarProfessor(${conteudo.id})" class="buttonAcoes" type="submit">
+          <button onclick="editarProfessor(${
+            conteudo.id
+          })" class="buttonAcoes" type="submit">
             <img src="../../../assets/img/editar.svg" class="imgAcoes"/>
           </button>
 
-          <button onclick="deletarProfessor(${conteudo.id})" class="buttonAcoes" type="submit">
+          <button onclick="deletarProfessor(${
+            conteudo.id
+          })" class="buttonAcoes" type="submit">
            <img src="../../../assets/img/remover.svg" class="imgAcoes"/>
           </button>
       </td>
@@ -102,11 +105,13 @@ form.addEventListener("submit", (event) => {
 
 // ORDERNAR ALFABETICA
 const ordernarProfessor = async (aluno) => {
-  const apiURL = await fetch(`https://db-json-emocion.onrender.com/professor?_sort=nome&_order=`)
+  const apiURL = await fetch(
+    `https://db-json-emocion.onrender.com/professor?_sort=nome&_order=`
+  )
   const professorOrdernar = await apiURL.json()
 
   const tbody = document.getElementById("tbody")
-  tbody.innerHTML = ''
+  tbody.innerHTML = ""
   professorOrdernar.forEach((conteudo) => {
     const dadoHTML = `
     <tr>
@@ -116,16 +121,20 @@ const ordernarProfessor = async (aluno) => {
       <td>
       ${
         conteudo.ativo
-        ? "<img src='../../../assets/img/Toggle_Ativo.svg' class='imgButton' />"
-        : "<img src='../../../assets/img/Toggle_Nao_Ativo.svg' class='imgButton' />"
+          ? "<img src='../../../assets/img/Toggle_Ativo.svg' class='imgButton' />"
+          : "<img src='../../../assets/img/Toggle_Nao_Ativo.svg' class='imgButton' />"
       }
       </td>
         <td>          
-          <button onclick="editarProfessor(${conteudo.id})" class="buttonAcoes" type="submit">
+          <button onclick="editarProfessor(${
+            conteudo.id
+          })" class="buttonAcoes" type="submit">
             <img src="../../../assets/img/editar.svg" class="imgAcoes"/>
           </button>
 
-          <button onclick="deletarProfessor(${conteudo.id})" class="buttonAcoes" type="submit">
+          <button onclick="deletarProfessor(${
+            conteudo.id
+          })" class="buttonAcoes" type="submit">
            <img src="../../../assets/img/remover.svg" class="imgAcoes"/>
           </button>
       </td>
@@ -137,12 +146,14 @@ const ordernarProfessor = async (aluno) => {
 }
 
 // ORDERNAR DE ATIVO
-const  ordernarProfessorAtivo= async (aluno) => {
-  const apiURL = await fetch(`https://db-json-emocion.onrender.com/professor?_sort=ativo&_order=desc`)
+const ordernarProfessorAtivo = async (aluno) => {
+  const apiURL = await fetch(
+    `https://db-json-emocion.onrender.com/professor?_sort=ativo&_order=desc`
+  )
   const professorOrdernarAtivo = await apiURL.json()
 
   const tbody = document.getElementById("tbody")
-  tbody.innerHTML = ''
+  tbody.innerHTML = ""
   professorOrdernarAtivo.forEach((conteudo) => {
     const dadoHTML = `
     <tr>
@@ -152,16 +163,20 @@ const  ordernarProfessorAtivo= async (aluno) => {
       <td>
       ${
         conteudo.ativo
-        ? "<img src='../../../assets/img/Toggle_Ativo.svg' class='imgButton' />"
-        : "<img src='../../../assets/img/Toggle_Nao_Ativo.svg' class='imgButton' />"
+          ? "<img src='../../../assets/img/Toggle_Ativo.svg' class='imgButton' />"
+          : "<img src='../../../assets/img/Toggle_Nao_Ativo.svg' class='imgButton' />"
       }
       </td>
         <td>          
-          <button onclick="editarProfessor(${conteudo.id})" class="buttonAcoes" type="submit">
+          <button onclick="editarProfessor(${
+            conteudo.id
+          })" class="buttonAcoes" type="submit">
             <img src="../../../assets/img/editar.svg" class="imgAcoes"/>
           </button>
 
-          <button onclick="deletarProfessor(${conteudo.id})" class="buttonAcoes" type="submit">
+          <button onclick="deletarProfessor(${
+            conteudo.id
+          })" class="buttonAcoes" type="submit">
            <img src="../../../assets/img/remover.svg" class="imgAcoes"/>
           </button>
       </td>

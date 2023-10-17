@@ -9,7 +9,9 @@ const getIdURL = () => {
 }
 
 const buscarAluno = async () => {
-  const response = await fetch(`https://db-json-emocion.onrender.com/aluno/${alunoID}`)
+  const response = await fetch(
+    `https://db-json-emocion.onrender.com/aluno/${alunoID}`
+  )
   const aluno = await response.json()
 
   return aluno

@@ -12,8 +12,8 @@ const getAluno = async () => {
         <td>
           ${
             conteudo.ativo
-            ? "<img src='../../../assets/img/Toggle_Ativo.svg' class='imgButton' />"
-            : "<img src='../../../assets/img/Toggle_Nao_Ativo.svg' class='imgButton' />"
+              ? "<img src='../../../assets/img/Toggle_Ativo.svg' class='imgButton' />"
+              : "<img src='../../../assets/img/Toggle_Nao_Ativo.svg' class='imgButton' />"
           }
         </td>
         <td class="tdButtonAcoes">
@@ -35,7 +35,9 @@ getAluno()
 
 // DELETAR
 const deletarAluno = async (id) => {
-  await fetch(`https://db-json-emocion.onrender.com/aluno/${id}`, { method: "DELETE" })
+  await fetch(`https://db-json-emocion.onrender.com/aluno/${id}`, {
+    method: "DELETE",
+  })
   window.location = `index.html`
 }
 
@@ -46,11 +48,13 @@ const editarAluno = (id) => {
 
 // PESQUISAR
 const pesquisarAluno = async (aluno) => {
-  const apiURL = await fetch(`https://db-json-emocion.onrender.com/aluno?nome_like=${aluno}`)
+  const apiURL = await fetch(
+    `https://db-json-emocion.onrender.com/aluno?nome_like=${aluno}`
+  )
   const alunoPesquisa = await apiURL.json()
 
   const tbody = document.getElementById("tbody")
-  tbody.innerHTML = ''
+  tbody.innerHTML = ""
   alunoPesquisa.forEach((conteudo) => {
     const dadoHTML = `
       <tr>
@@ -59,8 +63,8 @@ const pesquisarAluno = async (aluno) => {
         <td>
           ${
             conteudo.ativo
-            ? "<img src='../../../assets/img/Toggle_Ativo.svg' class='imgButton' />"
-            : "<img src='../../../assets/img/Toggle_Nao_Ativo.svg' class='imgButton' />"
+              ? "<img src='../../../assets/img/Toggle_Ativo.svg' class='imgButton' />"
+              : "<img src='../../../assets/img/Toggle_Nao_Ativo.svg' class='imgButton' />"
           }
         </td>
         <td class="tdButtonAcoes">
@@ -78,23 +82,25 @@ const pesquisarAluno = async (aluno) => {
   })
 }
 
-const form = document.getElementById('form')
+const form = document.getElementById("form")
 
-form.addEventListener('submit', (event) =>{
+form.addEventListener("submit", (event) => {
   event.preventDefault()
 
-  const inputPesquisa = document.getElementById('inputPesquisa').value
+  const inputPesquisa = document.getElementById("inputPesquisa").value
 
   pesquisarAluno(inputPesquisa)
 })
 
 // ORDERNAR ALFABETICA
 const ordernarAluno = async (aluno) => {
-  const apiURL = await fetch(`https://db-json-emocion.onrender.com/aluno?_sort=nome&_order=`)
+  const apiURL = await fetch(
+    `https://db-json-emocion.onrender.com/aluno?_sort=nome&_order=`
+  )
   const alunoOrdernar = await apiURL.json()
 
   const tbody = document.getElementById("tbody")
-  tbody.innerHTML = ''
+  tbody.innerHTML = ""
   alunoOrdernar.forEach((conteudo) => {
     const dadoHTML = `
       <tr>
@@ -103,8 +109,8 @@ const ordernarAluno = async (aluno) => {
         <td>
           ${
             conteudo.ativo
-            ? "<img src='../../../assets/img/Toggle_Ativo.svg' class='imgButton' />"
-            : "<img src='../../../assets/img/Toggle_Nao_Ativo.svg' class='imgButton' />"
+              ? "<img src='../../../assets/img/Toggle_Ativo.svg' class='imgButton' />"
+              : "<img src='../../../assets/img/Toggle_Nao_Ativo.svg' class='imgButton' />"
           }
         </td>
         <td class="tdButtonAcoes">
@@ -124,11 +130,13 @@ const ordernarAluno = async (aluno) => {
 
 // ORDERNAR DE ATIVO
 const ordernarAlunoAtivo = async (aluno) => {
-  const apiURL = await fetch(`https://db-json-emocion.onrender.com/aluno?_sort=ativo&_order=desc`)
+  const apiURL = await fetch(
+    `https://db-json-emocion.onrender.com/aluno?_sort=ativo&_order=desc`
+  )
   const alunoOrdernarAtivo = await apiURL.json()
 
   const tbody = document.getElementById("tbody")
-  tbody.innerHTML = ''
+  tbody.innerHTML = ""
   alunoOrdernarAtivo.forEach((conteudo) => {
     const dadoHTML = `
       <tr>
@@ -137,8 +145,8 @@ const ordernarAlunoAtivo = async (aluno) => {
         <td>
           ${
             conteudo.ativo
-            ? "<img src='../../../assets/img/Toggle_Ativo.svg' class='imgButton' />"
-            : "<img src='../../../assets/img/Toggle_Nao_Ativo.svg' class='imgButton' />"
+              ? "<img src='../../../assets/img/Toggle_Ativo.svg' class='imgButton' />"
+              : "<img src='../../../assets/img/Toggle_Nao_Ativo.svg' class='imgButton' />"
           }
         </td>
         <td class="tdButtonAcoes">
