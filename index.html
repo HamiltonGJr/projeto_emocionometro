@@ -1,106 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="./js/login_liberação_entrar.js" defer></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
-      rel="stylesheet"
-    />
+  <script src="./assets/js/login_liberação_entrar.js" defer></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+    rel="stylesheet" />
 
-    <link rel="stylesheet" href="./style/login_principal.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
 
-    <link rel="shortcut icon" href="./assets/img/image-2.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/style/login_principal.css" />
 
-    <title>Login - Emocionômetro | HG</title>
-  </head>
-  <body">
-    <main>
-      <img
-        src="./assets/img/BG.svg"
-        alt="Imagem principal: 'Agora você pode medir suas emoções e desenvolver sua inteligência emocional
-      '"
-        class="baner"
-      />
+  <link rel="shortcut icon" href="./assets/img/image-2.ico" type="image/x-icon">
 
-      <div class="containerFormulario">
-        <div class="containerLogo">
-          <img
-            src="./assets/img/image 2.svg"
-            alt="Logo simplificado: 'Coração'"
-          />
+  <title>Login - Emocionômetro | HG</title>
+</head>
+<body">
+  <main>
+    <img src="./assets/img/BG.svg" alt="Imagem principal: 'Agora você pode medir suas emoções e desenvolver sua inteligência emocional
+      '" class="baner" />
 
-          <div class="containerLogoTexto">
-            <img
-              src="./assets/img/image 3.svg"
-              alt="Imagem: 'Emocionômetro'"
-            />
-            <img src="./assets/img/image 4.svg" alt="Imagem: 'De grupo'" />
-          </div>
+    <div class="containerFormulario">
+      <div class="containerLogo">
+        <img src="./assets/img/image 2.svg" alt="Logo simplificado: 'Coração'" />
+
+        <div class="containerLogoTexto">
+          <img src="./assets/img/image 3.svg" alt="Imagem: 'Emocionômetro'" />
+          <img src="./assets/img/image 4.svg" alt="Imagem: 'De grupo'" />
+        </div>
+      </div>
+
+      <form action="" class="formulario" id="formulario">
+        <h1>Faça seu login</h1>
+
+        <label for="" class="labelText">E-mail</label>
+        <input type="email" placeholder="Insira seu e-mail" class="inputText" id="inputEmail" />
+
+        <label for="" class="labelText">Senha</label>
+        <input type="password" placeholder="Insira sua senha" class="inputText" id="inputSenha" />
+        <img src="./assets/img/eye-off-line.svg" alt="Olho fechado" class="olho_fechado" />
+
+        <div class="checkbox">
+          <input type="checkbox" />
+          <label for="checkbox">Lembrar-me</label>
+
+          <a href="">Esqueceu sua senha?</a>
         </div>
 
-        <form action="" class="formulario" id="formulario">
-          <h1>Faça seu login</h1>
+        <button onclick="fazerLogin()" id="botaoEntrar" class="button" type="button" disabled>
+          Entrar
+        </button>
 
-          <label for="" class="labelText">E-mail</label>
-          <input
-            type="email"
-            placeholder="Insira seu e-mail"
-            class="inputText"
-            id="inputEmail"
-          />
+        <div class="cotainerP">
+          <div class="line"></div>
+          <p>Ou então</p>
+          <div class="line"></div>
+        </div>
 
-          <label for="" class="labelText">Senha</label>
-          <input
-            type="password"
-            placeholder="Insira sua senha"
-            class="inputText"
-            id="inputSenha"
-          />
-          <img
-            src="./assets/img/eye-off-line.svg"
-            alt="Olho fechado"
-            class="olho_fechado"
-          />
-
-          <div class="checkbox">
-            <input type="checkbox" />
-            <label for="checkbox">Lembrar-me</label>
-
-            <a href="">Esqueceu sua senha?</a>
-          </div>
-
-          <button
-            onclick="fazerLogin()"
-            id="botaoEntrar"
-            class="button"
-            type="button"
-            disabled
-          >
-            Entrar
-          </button>
-
-          <div class="cotainerP">
-            <div class="line"></div>
-            <p>Ou então</p>
-            <div class="line"></div>
-          </div>
-
-          <button class="button cadastrarSe">Cadastrar-se</button>
-        </form>
-      </div>
-    </main>
+        <button class="button cadastrarSe">Cadastrar-se</button>
+      </form>
+    </div>
+  </main>
   </body>
+
 </html>
